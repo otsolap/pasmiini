@@ -1,0 +1,90 @@
+// Markdown is wrapped in Article.
+// These styles are for Markdown content.
+.markdown {
+  article {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin-bottom: $single;
+    }
+
+    p {
+      padding-bottom: $half;
+    }
+
+    ul {
+      padding-left: $single;
+    }
+
+    ul li {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    li:has(strong) {
+      font-size: 1.125rem;
+      margin-left: $single;
+      font-family: "Bitter", serif;
+      padding-bottom: $single;
+    }
+
+    img {
+      object-fit: contain;
+      object-position: 50% 50%;
+      height: fit-content;
+      width: 100%;
+      max-width: 350px;
+      max-height: 350px;
+      @include border-radius($single);
+    }
+  }
+}
+
+// Green background
+.bg-green {
+  .markdown {
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      strong {
+        color: $yellow;
+      }
+    }
+
+    li:has(strong) {
+      list-style-image: url("/icons/checkmark-yellow.svg");
+    }
+
+    a {
+      color: $yellow;
+    }
+  }
+}
+
+// Creamywhite background
+.bg-creamywhite {
+  .markdown {
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      strong {
+        color: $blue;
+      }
+    }
+
+    li:has(strong) {
+      list-style-image: url("/icons/checkmark-green.svg");
+    }
+    a {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+/*
+Swiper.JS overwrites
+*/
+
+.serviceCarousel,
+.heroCarousel,
+.imageCarousel {
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $creamyWhite;
+
+    &:focus,
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: $green;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    border-color: $yellow;
+    background: $yellow;
+  }
+}
+
+/*
+Service & Refences
+*/
+.serviceCarousel {
+  &__figure {
+    position: relative;
+    margin-top: $single;
+    margin-bottom: $double;
+    height: 160px;
+    width: 160px;
+  }
+
+  &__footer {
+    padding-top: $single;
+    padding-bottom: $double;
+  }
+}
+
+.serviceCarousel,
+.imageCarousel,
+.heroCarousel {
+  .swiper-pagination-bullet {
+    border-color: $creamyWhite;
+  }
+
+  .green-circle {
+    border-color: $green;
+  }
+
+  .green-circle.swiper-pagination-bullet-active {
+    border-color: $yellow;
+  }
+}
+
+.imageCarousel {
+  &__footer {
+    width: inherit;
+    @include display-flex();
+    @include flex-direction(column);
+    justify-content: center;
+    gap: $single;
+    padding: $single;
+  }
+}
+
+/* DESKTOP STYLES */
+@media (width >= $container-desktop) {
+  /*
+Service & Refences
+*/
+  .serviceCarousel {
+    $p: &;
+
+    &__title,
+    &__body,
+    &__footer {
+      display: none;
+    }
+
+    .swiper-slide-active {
+      #{$p}__figure {
+        height: 490px;
+        width: 490px;
+      }
+
+      #{$p}__title,
+      #{$p}__body,
+      #{$p}__footer {
+        display: block;
+      }
+    }
+  }
+  /*
+// Image Carousel
+  */
+
+  .imageCarousel {
+    $p: &;
+
+    &__footer {
+      display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 90%;
+    }
+
+    .swiper-button-next {
+      right: 20%;
+    }
+
+    .swiper-button-prev {
+      left: 20%;
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      opacity: 0.6;
+      background-color: $black;
+    }
+
+    .swiper-slide-active {
+      width: 960px;
+
+      #{$p}__footer {
+        @include display-flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "cards": {
+    "title": "Kortit-osion tekstisisältö",
+    "summary": "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
+    "backgroundColor": "green",
+    "items": [
+      {
+        "image": "/images/logo-green.svg",
+        "title": "Card-title",
+        "summary": "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen."
+      },
+      {
+        "image": "/images/logo-green.svg",
+        "title": "Card-title",
+        "summary": "Kerrot asiakkaalle mitä ohjeet sisältää, kenelle ohjeet ovat ja mitä ohjeet eivät sisällä. "
+      },
+      {
+        "image": "/images/logo-green.svg",
+        "title": "Card-title",
+        "summary": "Tuot esille haasteita, joita ratkoit ja niiden ratkaisujen muodosta löysit yritystoimintosi sekä tarinasi. "
+      }
+    ]
+  },
+  "meta": {
+    "title": "Pasmiini",
+    "description": "Work for yourself on yourself",
+    "url": "pasmiini.fi",
+    "image": "/images/logo.svg"
+  },
+  "accordion": {
+    "image": "/images/Pasmiini_Profiilikuva.png",
+    "backgroundColor": "creamyWhite",
+    "items": [
+      "b2c-rahanpalautus",
+      "b2c-epamukavuus-salilla"
+    ]
+  },
+  "mediaMix_2": {
+    "backgroundColor": "green",
+    "items": [
+      {
+        "type": "image",
+        "image": "/images/Karusellikuva_03.png",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen. Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.\\\nTekstikenttään saa vapaasti kirjoittaa rikasta tekstisisältöä sekä halutessasi lisätä määrittelemätön määrä linkkejä. Pystyt halutessasi muuttamaan taustaväriä brädi-ilmeen mukaiseksi.\\\n\\\nLista elementit näytetään “tsekki”-merkkeille.\\\n\\\nLinkkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikenttien päätyyn saat lisätä maksimissaan kaksi toimintakehote nappia.\n\n* **Tunne kehosi ja rakastut itseesi**\n\n**[S﻿yy ostaa ohjelma](https://www.instagram.com/pasmiini/)**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "image": "",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen. Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.\\\nTekstikenttään saa vapaasti kirjoittaa rikasta tekstisisältöä sekä halutessasi lisätä määrittelemätön määrä linkkejä. Pystyt halutessasi muuttamaan taustaväriä brädi-ilmeen mukaiseksi.\\\n\\\nLista elementit näytetään “tsekki”-merkkeille.\\\n\\\nLinkkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikenttien päätyyn saat lisätä maksimissaan kaksi toimintakehote nappia.\n\n* **Tunne kehosi ja rakastut itseesi**\n\n**[S﻿yy ostaa ohjelma](https://www.instagram.com/pasmiini/)**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Tutustu ohjelmiin",
+            "url": "/palvelut"
+          }
+        ]
+      }
+    ]
+  },
+  "mediaMix_3": {
+    "backgroundColor": "blue",
+    "items": [
+      {
+        "type": "image",
+        "image": "/images/logo.svg",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen. Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.\\\nTekstikenttään saa vapaasti kirjoittaa rikasta tekstisisältöä sekä halutessasi lisätä määrittelemätön määrä linkkejä. Pystyt halutessasi muuttamaan taustaväriä brädi-ilmeen mukaiseksi.\\\n\\\nLista elementit näytetään “tsekki”-merkkeille.\\\n\\\nLinkkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikenttien päätyyn saat lisätä maksimissaan kaksi toimintakehote nappia.\n\n**[S﻿yy ostaa ohjelma](https://www.instagram.com/pasmiini/)**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "image": "/images/logo.svg",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen. Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.\\\nTekstikenttään saa vapaasti kirjoittaa rikasta tekstisisältöä sekä halutessasi lisätä määrittelemätön määrä linkkejä. Pystyt halutessasi muuttamaan taustaväriä brädi-ilmeen mukaiseksi.\\\n\\\nLista elementit näytetään “tsekki”-merkkeille.\\\n\\\nLinkkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikenttien päätyyn saat lisätä maksimissaan kaksi toimintakehote nappia.\n\n* **Tunne kehosi ja rakastut itseesi**\n\n**[S﻿yy ostaa ohjelma](https://www.instagram.com/pasmiini/)**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      }
+    ]
+  },
+  "textarea_2": {
+    "body": "## Tekstikentän otsikon **lihavointi antaa tekstille brändimukaisen värinsä.**\n\nTekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa.\n\nHalutessasi voit myös vaihtaa taustaväriä brändiväriesi mukaiseksi. Riippuen taustasta tekstin väri muutetaan luettavuus syistä automaattisesti valkoiseksi.\n\n* **Tunne kehosi ja rakastut itseesi**\n* **Tunne kehosi ja rakastut itseesi**\n* **T﻿unne kehosi ja rakastut itseesi**\n* **T﻿unne kehosi ja rakastut itseesi**\n\nV﻿oit lukea aiheesta[ lisää täältä.](#)",
+    "backgroundColor": "creamyWhite"
+  },
+  "mediaMix_4": {
+    "backgroundColor": "pink",
+    "items": [
+      {
+        "type": "image",
+        "image": "/images/Karusellikuva_04.png",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "\n\n* **Tunne kehosi ja rakastut itseesi**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ],
+        "mediaWidth": true
+      },
+      {
+        "type": "markdown",
+        "image": "/images/logo.svg",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen. Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.\\\nTekstikenttään saa vapaasti kirjoittaa rikasta tekstisisältöä sekä halutessasi lisätä määrittelemätön määrä linkkejä. Pystyt halutessasi muuttamaan taustaväriä brädi-ilmeen mukaiseksi.\\\n\\\nLista elementit näytetään “tsekki”-merkkeille.\\\n\\\nLinkkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikenttien päätyyn saat lisätä maksimissaan kaksi toimintakehote nappia.\n\n* **Tunne kehosi ja rakastut itseesi**\n\n**[S﻿yy ostaa ohjelma](https://www.instagram.com/pasmiini/)**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      }
+    ]
+  },
+  "mediaMix_5": {
+    "backgroundColor": "yellow",
+    "items": [
+      {
+        "type": "markdown",
+        "image": "/images/logo.svg",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen. Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.\\\nTekstikenttään saa vapaasti kirjoittaa rikasta tekstisisältöä sekä halutessasi lisätä määrittelemätön määrä linkkejä. Pystyt halutessasi muuttamaan taustaväriä brädi-ilmeen mukaiseksi.\\\n\\\nLista elementit näytetään “tsekki”-merkkeille.\\\n\\\nLinkkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikenttien päätyyn saat lisätä maksimissaan kaksi toimintakehote nappia.\n\n* **Tunne kehosi ja rakastut itseesi**\n\n**[S﻿yy ostaa ohjelma](https://www.instagram.com/pasmiini/)**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "image": "/images/logo.svg",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa. \n\nPolkupyörän talvisäilytys ja perushuolto 100 €. Nouto myymälöidemme lähialueilta 10 €",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      }
+    ]
+  },
+  "highlight": {
+    "image": "/images/logo.svg",
+    "title": "Haluatko oppia tuntemaan kehosi, parantamaan elämän laatua sekä saamaan enemmän itsevarmuutta 12 viikon sisällä?",
+    "body": "",
+    "button": [
+      {
+        "title": "Haluan elämäntapamuutoksen",
+        "url": "/palvelut"
+      }
+    ],
+    "backgroundColor": "blue"
+  },
+  "title": "Mallituote",
+  "mediaMix": {
+    "backgroundColor": "creamyWhite",
+    "items": [
+      {
+        "type": "image",
+        "image": "/images/Pasmiini_Profiilikuva.png",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "\n\n* **Tunne kehosi ja rakastut itseesi**",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": []
+      },
+      {
+        "type": "markdown",
+        "image": "/images/logo.svg",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "## Jasmiini Peuramäki\n\n### PT-taustainen lyhytterapeutti\n\nlorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium lorem lipsum lorem lipsum lorem lipsium",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      }
+    ]
+  },
+  "textarea": {
+    "body": "## Tekstikentän otsikon **lihavointi antaa tekstille brändimukaisen värinsä.**\n\nTekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa.\n\nHalutessasi voit myös vaihtaa taustaväriä brändiväriesi mukaiseksi. Riippuen taustasta tekstin väri muutetaan luettavuus syistä automaattisesti valkoiseksi.\n\n* **Tunne kehosi ja rakastut itseesi**\n* **Tunne kehosi ja rakastut itseesi**\n* **T﻿unne kehosi ja rakastut itseesi**\n* **T﻿unne kehosi ja rakastut itseesi**\n\nV﻿oit lukea aiheesta[ lisää täältä.](#)",
+    "backgroundColor": "green"
+  },
+  "hero": {
+    "title": "Hero-Otsikko max 50 kirjainta pitkä.",
+    "summary": "Tämä on Heron alaotsikko. Herolohko antaa sinulle vaihtoehdon täyttää koko lohkon kuvalla, tai jakaa kuvan 50% tekstikentän kanssa. Kuvan sijainninkin voit muuttaa. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta. Kuvan sijaan myös mahdollista liittää video youtube-linkin muodossa.",
+    "align": "left",
+    "media": "video",
+    "image": "/images/logo.svg",
+    "mediaWidth": false,
+    "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+    "buttons": [
+      {
+        "title": "Tutustu ohjelmiin",
+        "url": "/palvelut"
+      }
+    ]
+  }
+}

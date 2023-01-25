@@ -1,0 +1,60 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.carousel {
+  margin-bottom: $single;
+}
+
+.header,
+.wrapper {
+  padding: $single;
+  @include display-flex();
+  @include flex-direction(column);
+}
+
+.header {
+  gap: $single;
+  padding-bottom: $double;
+}
+
+.wrapper {
+  gap: $single;
+  flex-wrap: wrap;
+}
+
+.item {
+  @include display-flex();
+  @include flex-direction(column);
+  @include border-radius($single);
+  padding: $single;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: $single;
+}
+
+.image {
+  @include border-radius(100%);
+}
+
+.title {
+  display: block;
+}
+
+
+/* DESKTOP STYLES */
+@media (width >= $container-desktop) {
+
+  .header {
+    max-width: calc($container-desktop / 2);
+    flex: 0 0 50%;
+  }
+
+  .wrapper {
+    @include flex-direction(row);
+    gap: $double;
+  }
+
+}

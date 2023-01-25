@@ -1,0 +1,70 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.mediaMix {
+  position: relative;
+}
+
+.mediaMix,
+.wrapper,
+.mediaMixColumn {
+  @include display-flex();
+  @include flex-direction(column);
+}
+
+.wrapper {
+  gap: $single;
+}
+
+.mediaMixColumn {
+  margin: auto;
+}
+
+.markdown,
+.imageContainer,
+.circleContainer,
+.videoContainer {
+  padding: $single;
+}
+
+.imageContainer,
+.circleContainer,
+.videoContainer {
+  position: relative;
+  height: 325px;
+  width: 325px;
+}
+
+.circle {
+  @include border-radius(100%);
+}
+
+.buttonWrapper {
+  padding-top: $single;
+  padding-bottom: $double;
+}
+
+/* DESKTOP STYLES */
+@media (width >= $container-desktop) {
+  .wrapper {
+    @include flex-direction(row);
+  }
+
+  .mediaMixColumn {
+    max-width: calc($container-desktop / 2);
+    flex: 0 0 50%;
+  }
+
+  .circleContainer,
+  .videoContainer {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+  }
+
+  .imageContainer {
+    width: 720px;
+    height: 600px;
+  }
+}

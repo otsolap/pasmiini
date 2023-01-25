@@ -1,0 +1,116 @@
+{
+    "calender": {
+        "title": "Aloita yhteistyö kanssani",
+        "url": "/treenit"
+    },
+    "highlight": {
+        "image": "/images/logo.svg",
+        "title": "Haluatko oppia tuntemaan kehosi, parantamaan elämän laatua sekä saamaan enemmän itsevarmuutta 12 viikon sisällä?",
+        "body": "",
+        "button": [
+            {
+                "title": "Haluan elämäntapamuutoksen",
+                "url": "/palvelut"
+            }
+        ],
+        "backgroundColor": "blue"
+    },
+    "cards": {
+        "title": "Kortit-osion tekstisisältö",
+        "summary": "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
+        "backgroundColor": "green",
+        "items": [
+            {
+                "image": "/images/logo-green.svg",
+                "title": "Card-title",
+                "summary": "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen."
+            },
+            {
+                "image": "/images/logo-green.svg",
+                "title": "Card-title",
+                "summary": "Kerrot asiakkaalle mitä ohjeet sisältää, kenelle ohjeet ovat ja mitä ohjeet eivät sisällä. "
+            },
+            {
+                "image": "/images/logo-green.svg",
+                "title": "Card-title",
+                "summary": "Tuot esille haasteita, joita ratkoit ja niiden ratkaisujen muodosta löysit yritystoimintosi sekä tarinasi. "
+            },
+            {
+                "image": "/images/logo-green.svg",
+                "title": "Card-title",
+                "summary": "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen."
+            },
+            {
+                "image": "/images/logo-green.svg",
+                "title": "Card-title",
+                "summary": "Kerrot asiakkaalle mitä ohjeet sisältää, kenelle ohjeet ovat ja mitä ohjeet eivät sisällä. "
+            },
+            {
+                "image": "/images/logo-green.svg",
+                "title": "Card-title",
+                "summary": "Tuot esille haasteita, joita ratkoit ja niiden ratkaisujen muodosta löysit yritystoimintosi sekä tarinasi. "
+            }
+        ]
+    },
+    "imageCarousel": {
+        "title": "Kuvakarusellin tekstisisältö",
+        "summary": "Voit halutessasi lisätä otsikon sekä johdattelevan tekstin, jossa kuvaat mitä karusellissa olevat kuvat sekä tekstisisällöt viittaavat. Esim onko karusellin teemana asiakaspalaute, omat arvomaailmasi tai ohjelmasi sisältö?",
+        "items": [
+            {
+                "image": "/images/Karusellikuva_01.png",
+                "title": "Kuvakarusellin otsikko",
+                "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+            },
+            {
+                "image": "/images/Karusellikuva_02.png",
+                "title": "Kuvakarusellin otsikko",
+                "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+            },
+            {
+                "image": "/images/Karusellikuva_03.png",
+                "title": "Kuvakarusellin otsikko",
+                "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+            },
+            {
+                "image": "/images/Karusellikuva_04.png",
+                "title": "Kuvakarusellin otsikko",
+                "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+            }
+        ],
+        "backgroundColor": "creamyWhite"
+    },
+    "references": {
+        "title": "Referenssi-lohkon Tekstisisältö",
+        "summary": "Yksittäiseen hyötyyn voit lisätä kuvan, logon tai ikonin. Hyötyjä saa olla maksimissaan 5 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
+        "backgroundColor": "green",
+        "items": [
+            {
+                "type": "image",
+                "image": "/images/Refe_Otso.png",
+                "title": "Otso Lappalainen",
+                "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+            },
+            {
+                "type": "image",
+                "image": "/images/Refe_Otso.png",
+                "title": "Otso",
+                "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+            },
+            {
+                "type": "image",
+                "image": "/images/Refe_Otso.png",
+                "title": "Otso Lappalainen",
+                "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+            },
+            {
+                "image": "/images/Refe_Otso.png",
+                "title": "Lappalainen",
+                "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+            }
+        ]
+    },
+    "placeholder": {
+        "image": "/images/placeholder.png",
+        "title": "Pasmiini - Work fo yourself, on youself."
+    }
+}

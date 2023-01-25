@@ -1,0 +1,31 @@
+{
+    "brand": {
+        "logo": "/images/pasmiini.svg",
+        "slogan": "Work for yourself, on yourself"
+    },
+    "navigation": {
+        "pages": [
+            {
+                "title": "Valmennusohjelma",
+                "path": "/palvelut",
+                "icon": "clipboard"
+            },
+            {
+                "title": "Blogi",
+                "path": "/blogi",
+                "icon": "pen"
+            },
+            {
+                "title": "Jasmiini",
+                "path": "/jasmiini",
+                "icon": "logo"
+            }
+        ],
+        "modal": [
+            {
+                "openModal": "Lisää",
+                "closeModal": "Vähemmän"
+            }
+        ]
+    }
+}

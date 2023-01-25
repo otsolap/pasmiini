@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "logo": "/images/logo.svg"
+  },
+  "company": {
+    "open": false,
+    "title": "Jasmiini Peuramäki",
+    "body": "Alatunniste on jaettu kolmeen sarakkeeseen: logo, vapaamuotoinen tekstikenttä ja lopuksi linkit yhteystietoihin sekä someen.\\\n\\\nTämän Jasmiinista kertovan sarakkeen päädyssä on linkki sinun yhteydenotto lomakkeeseen. Tämä linkki on väriltään keltainen vakituisesti, koska haluamme nostaa sen painoarvoa.\\\n\\\nHuom! Myyntisivuilla tätä alatunnistetta ei näytetä."
+  },
+  "contact": {
+    "open": false,
+    "title": "Tavoitat minut",
+    "list": [
+      {
+        "title": "+358 40416 8695",
+        "url": "+358404168695",
+        "type": "phone"
+      },
+      {
+        "title": "+358 40416 8695",
+        "url": "+358404168695",
+        "type": "whatsapp"
+      },
+      {
+        "title": "Jasmiini@Pasmiini.fi",
+        "url": "jasmiini@pasmiini.fi",
+        "type": "email"
+      },
+      {
+        "title": "/Pasmiini",
+        "url": "https://www.instagram.com/pasmiini/",
+        "type": "instagram"
+      },
+      {
+        "title": "/Jasmiini-peuramaki",
+        "url": "https://www.linkedin.com/in/pasmiini/",
+        "type": "linkedin"
+      },
+      {
+        "title": "/Pasmiini",
+        "url": "https://www.facebook.com/Pasmiini",
+        "type": "facebook"
+      }
+    ]
+  }
+}

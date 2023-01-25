@@ -1,0 +1,21 @@
+import footer from "@/content/settings/footer.json";
+import styles from "@/styles/components/footer.module.scss";
+import FooterColumnLogo from "@/partials/FooterColumnLogo";
+import FooterColumnCompany from "@/partials/FooterColumnCompany";
+import FooterColumnContact from "@/partials/FooterColumnContact";
+import Waves from "@/partials/Waves";
+
+const Footer = () => {
+  return (
+    <footer className={styles.footer}>
+      <Waves currentColor={'green'} />
+      <div className={styles.columnContainer}>
+        <FooterColumnLogo {...footer.brand} />
+        <FooterColumnCompany {...footer.company} />
+        <FooterColumnContact {...footer.contact} />
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

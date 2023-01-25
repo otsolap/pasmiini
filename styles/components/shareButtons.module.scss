@@ -1,0 +1,25 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.shareButtons {
+    @include display-flex();
+    @include flex-direction(row);
+    gap: $single;
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+.icon {
+    width: 100%;
+    height: auto;
+    max-width: $single;
+    max-height: $single;
+}
+
+@media (width >= $container-desktop) {
+    .icon {
+        max-width: $double;
+        max-height: $double;
+    }
+}

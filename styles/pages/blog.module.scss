@@ -1,0 +1,59 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.articleContainer,
+.imageContainer,
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articleContainer,
+.imageContainer,
+.image {
+  @include border-radius($half);
+}
+
+.articleContainer {
+  background-color: $creamyWhite;
+  margin-bottom: $single;
+}
+
+.imageContainer {
+  height: 256px;
+  position: relative;
+}
+
+.image {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+// Markdown is wrapped in Article.
+// These styles are for Markdown content.
+.markdown {
+  article {
+    padding: 0;
+  }
+}
+
+
+/* DESKTOP STYLES */
+@media (width >= $container-desktop) {
+
+  .articleContainer {
+    max-width: $width-max-article-layout;
+    margin-bottom: $double;
+  }
+
+  .content {
+    max-width: $width-max-article;
+  }
+
+  .imageContainer {
+    height: 512px;
+    width: 720px;
+  }
+
+}

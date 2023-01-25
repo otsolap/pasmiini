@@ -1,0 +1,248 @@
+{
+  "hero": {
+    "title": "Hero-Otsikko max 50 kirjainta pitkä.",
+    "summary": "Tämä on Heron alaotsikko. Herolohko antaa sinulle vaihtoehdon täyttää koko lohkon kuvalla, tai jakaa kuvan 50% tekstikentän kanssa. Kuvan sijainninkin voit muuttaa. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta. Kuvan sijaan myös mahdollista liittää video youtube-linkin muodossa.",
+    "align": "left",
+    "media": "image",
+    "image": "/images/Karusellikuva_02.png",
+    "mediaWidth": true,
+    "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+    "buttons": [
+      {
+        "title": "Tutustu ohjelmiin",
+        "url": "/palvelut"
+      }
+    ]
+  },
+  "mediaMix": {
+    "backgroundColor": "green",
+    "items": [
+      {
+        "type": "image",
+        "image": "/images/Karusellikuva_02.png",
+        "mediaWidth": true,
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa. \n\nPolkupyörän talvisäilytys ja perushuolto 100 €. Nouto myymälöidemme lähialueilta 10 €",
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": "/images/Karusellikuva_02.png",
+        "mediaWidth": false,
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "body": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa. \n\nPolkupyörän talvisäilytys ja perushuolto 100 €. Nouto myymälöidemme lähialueilta 10 €",
+        "highlightList": [
+          {
+            "title": "Uudet nettisivut"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Uudet nettisivut 2",
+            "url": "/linkki"
+          }
+        ]
+      }
+    ]
+  },
+  "services": {
+    "title": "Ohjelmat-lohkon Tekstisisältö",
+    "summary": "Yksittäiseen hyötyyn voit lisätä kuvan, logon tai ikonin. Hyötyjä saa olla maksimissaan 5 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
+    "backgroundColor": "creamyWhite",
+    "items": [
+      {
+        "type": "image",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "image": "/images/logo-yellow.svg",
+        "title": "Tunne kehosi rakastu itseesti",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä.",
+        "button": [
+          {
+            "title": "Haluan elämäntapamuutoksen",
+            "url": "/palvelut"
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "image": "/images/logo-yellow.svg",
+        "title": "Tunne kehosi rakastu itseesti",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä.",
+        "button": [
+          {
+            "title": "Haluan elämäntapamuutoksen",
+            "url": "/palvelut"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": "/images/logo-yellow.svg",
+        "title": "Tunne kehosi rakastu itseesti",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä.",
+        "button": [
+          {
+            "title": "Haluan elämäntapamuutoksen",
+            "url": "/palvelut"
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+        "image": "/images/logo-yellow.svg",
+        "title": "Tunne kehosi rakastu itseesti",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä.",
+        "button": [
+          {
+            "title": "Haluan elämäntapamuutoksen",
+            "url": "/palvelut"
+          }
+        ]
+      }
+    ]
+  },
+  "imageCarousel": {
+    "title": "Kuvakarusellin tekstisisältö",
+    "summary": "Voit halutessasi lisätä otsikon sekä johdattelevan tekstin, jossa kuvaat mitä karusellissa olevat kuvat sekä tekstisisällöt viittaavat. Esim onko karusellin teemana asiakaspalaute, omat arvomaailmasi tai ohjelmasi sisältö?",
+    "backgroundColor": "green",
+    "items": [
+      {
+        "image": "/images/Karusellikuva_01.png",
+        "title": "Kuvakarusellin otsikko",
+        "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+      },
+      {
+        "image": "/images/Karusellikuva_02.png",
+        "title": "Kuvakarusellin otsikko",
+        "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+      },
+      {
+        "image": "/images/Karusellikuva_03.png",
+        "title": "Kuvakarusellin otsikko",
+        "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+      },
+      {
+        "image": "/images/Karusellikuva_04.png",
+        "title": "Kuvakarusellin otsikko",
+        "summary": "Aseta vähintään 3 kuvaa. Kirjoita  ytimekäs otsikko sekä lyhyt teksti, joka viittaa karusellikuvan sisältöön."
+      }
+    ]
+  },
+  "heroCarousel": {
+    "backgroundColor": "green",
+    "items": [
+      {
+        "image": "/images/Karusellikuva_01.png",
+        "title": "Herokarusellin otsikko.",
+        "summary": "Vapaamuotoinen tekstikenttä. Herokaruselliin voit kirjoittaa otsikon ja tekstikentän. Jokainen karusellin kuva saa oman tekstikenttänsä. Tekstine päätyyn pystyt lisäämään max kaksi toimintakehotetta.",
+        "buttons": [
+          {
+            "title": "Näytä ohjelma",
+            "url": "/palvelut"
+          }
+        ],
+        "backgroundColor": "green"
+      },
+      {
+        "image": "/images/Karusellikuva_02.png",
+        "title": "Herokarusellin otsikko.",
+        "summary": "Vapaamuotoinen tekstikenttä. Herokaruselliin voit kirjoittaa otsikon ja tekstikentän. Jokainen karusellin kuva saa oman tekstikenttänsä. Tekstine päätyyn pystyt lisäämään max kaksi toimintakehotetta.",
+        "buttons": [
+          {
+            "title": "Näytä ohjelma",
+            "url": "/palvelut"
+          }
+        ],
+        "backgroundColor": "creamyWhite"
+      },
+      {
+        "image": "/images/Karusellikuva_03.png",
+        "title": "Herokarusellin otsikko.",
+        "summary": "Vapaamuotoinen tekstikenttä. Herokaruselliin voit kirjoittaa otsikon ja tekstikentän. Jokainen karusellin kuva saa oman tekstikenttänsä. Tekstine päätyyn pystyt lisäämään max kaksi toimintakehotetta.",
+        "buttons": [
+          {
+            "title": "Näytä ohjelma",
+            "url": "/palvelut"
+          }
+        ],
+        "backgroundColor": "green"
+      },
+      {
+        "image": "/images/Karusellikuva_04.png",
+        "title": "Herokarusellin otsikko.",
+        "summary": "Vapaamuotoinen tekstikenttä. Herokaruselliin voit kirjoittaa otsikon ja tekstikentän. Jokainen karusellin kuva saa oman tekstikenttänsä. Tekstine päätyyn pystyt lisäämään max kaksi toimintakehotetta.",
+        "buttons": [
+          {
+            "title": "Näytä ohjelma",
+            "url": "/palvelut"
+          }
+        ],
+        "backgroundColor": "creamyWhite"
+      }
+    ]
+  },
+  "references": {
+    "title": "Referenssi-lohkon Tekstisisältö",
+    "summary": "Yksittäiseen hyötyyn voit lisätä kuvan, logon tai ikonin. Hyötyjä saa olla maksimissaan 5 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
+    "backgroundColor": "creamyWhite",
+    "items": [
+      {
+        "type": "image",
+        "image": "/images/Refe_Otso.png",
+        "title": "Otso Lappalainen",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+      },
+      {
+        "type": "image",
+        "image": "/images/Refe_Otso.png",
+        "title": "Otso",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+      },
+      {
+        "type": "image",
+        "image": "/images/Refe_Otso.png",
+        "title": "Otso Lappalainen",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+      },
+      {
+        "type": "image",
+        "image": "/images/Refe_Otso.png",
+        "title": "Lappalainen",
+        "summary": "Karusellin referenssikorttiin liität kuvan/videon asiakkaasta. Kuvat kehystetään logon-mukaiseen palloon. Asiakkaan nimi on vapaa-tekstikenttä ja asiakkaan palaute perinteinen tekstikenttä."
+      }
+    ]
+  },
+  "blogs": {
+    "title": "Blogi-lohkon Tekstisisältö",
+    "summary": "Blogi-lohkossa esitetään blogin kuva, otsikko sekä toimintakehote lukemaan kyseinen artikkeli. Jos sattumoisin sinulle ei ole kuvaa blogia varten. Ladataan sen tilalle logosi. Tätä en kuitenkaan missään tapauksessa suosittele.",
+    "backgroundColor": "creamyWhite",
+    "filter": "custom",
+    "blog": [
+      "istumatyolainen-vasyttaako",
+      "syomishairio"
+    ],
+    "link": [
+      {
+        "title": "Lue Lisää blogikirjoituksia",
+        "url": "/blogi"
+      }
+    ]
+  },
+  "textarea": {
+    "body": "## Tekstikentän otsikon **lihavointi antaa tekstille brändimukaisen värinsä.**\n\nTekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa.\n\nHalutessasi voit myös vaihtaa taustaväriä brändiväriesi mukaiseksi. Riippuen taustasta tekstin väri muutetaan luettavuus syistä automaattisesti valkoiseksi.\n\n* **Tunne kehosi ja rakastut itseesi**\n* **Tunne kehosi ja rakastut itseesi**\n* **T﻿unne kehosi ja rakastut itseesi**\n* **T﻿unne kehosi ja rakastut itseesi**\n\nV﻿oit lukea aiheesta[ lisää täältä.](#)",
+    "backgroundColor": "creamyWhite"
+  },
+  "meta": {
+    "title": "Pasmiini",
+    "description": "Work for yourself on yourself",
+    "url": "pasmiini.fi",
+    "image": "/images/placeholder.png"
+  }
+}

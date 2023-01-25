@@ -1,0 +1,164 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+@import "partials/typography";
+@import "components/swiper";
+@import "components/markdown";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: auto;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: $green;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+  background-color: $creamyWhite;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.waves {
+  position: relative;
+  max-height: 80px;
+  background-color: transparent;
+  margin-top: -$triple;
+  z-index: 40;
+}
+
+.btn,
+.button {
+  background-color: $yellow;
+  color: $green;
+  font-weight: 700;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  @include display-flex;
+  justify-content: center;
+  @include border-radius($single);
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $yellow;
+  }
+
+  &--focus {
+    &:hover,
+    &:focus {
+      background-color: $green;
+      color: $yellow;
+    }
+  }
+}
+
+.youtube {
+  @include border(1px solid transparent);
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.active {
+  color: $yellow;
+}
+
+.bg-green {
+  background-color: $green;
+  color: $creamyWhite;
+}
+
+.color-green {
+  color: $green;
+}
+
+.bg-creamyWhite {
+  background-color: $creamyWhite;
+}
+
+.color-creamyWhite {
+  color: $creamyWhite;
+}
+
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.color-yellow {
+  background-color: $yellow;
+}
+
+.bg-pink {
+  background-color: $pink;
+}
+
+.color-pink {
+  color: $pink;
+}
+
+
+/* DESKTOP STYLES */
+@media (width >= $container-desktop) {
+  .container {
+    max-width: $container-desktop;
+  }
+
+  .btn {
+    width: fit-content;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .markdown {
+    article {
+      img {
+        max-width: $width-max-article;
+        max-height: 720px;
+      }
+    }
+  }
+}
