@@ -16,6 +16,9 @@ const Header = () => {
   const { mediaWidth, media } = home.hero;
 
   const toggleBackground = () => {
+    if (mediaWidth !== true || media !== "image" || router.pathname !== "/")
+      return;
+
     if (window.scrollY > 100) {
       toggle(false);
     } else {
@@ -77,14 +80,7 @@ const Header = () => {
         className={`
       desktop-only 
       ${styles.primaryMenu}
-      ${
-        mediaWidth === true &&
-        media === "image" &&
-        router.pathname === "/" &&
-        background === true
-          ? styles.transparent
-          : ""
-      }
+      ${background == true ? styles.transparent : styles.colorful}
       `}
       >
         <ul className={styles.wrapper}>

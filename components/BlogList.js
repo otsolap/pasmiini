@@ -5,8 +5,9 @@ import Waves from "@/partials/Waves";
 
 const BlogList = ({ blogs }) => {
   return (
-      <section className={`${styles.blogs} bg-${blogs.backgroundColor}`}>
+    <>
       <Waves currentColor={blogs.backgroundColor} />
+      <section className={`${styles.blogs} bg-${blogs.backgroundColor}`}>
         {blogs.title && (
           <header className={styles.header}>
             {blogs.title && <h2>{blogs.title}</h2>}
@@ -37,6 +38,8 @@ const BlogList = ({ blogs }) => {
           </footer>
         )}
       </section>
+      <Waves  rotated currentColor={blogs.backgroundColor} />
+    </>
   );
 };
 

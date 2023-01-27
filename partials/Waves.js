@@ -1,9 +1,10 @@
-const Waves = ({ currentColor }) => {
+const Waves = ({ currentColor, rotated }) => {
   return (
     <div
       className={`     
       waves
       color-${currentColor}
+      ${rotated ? "rotated" : ""}
       `}
     >
       <svg

@@ -25,7 +25,7 @@ const Blog = ({ meta, hero, archive, items, highlight }) => {
       <section id="blog-archive">
         <Hero hero={hero} />
         <div className={styles.blogs}>
-          <Waves />
+          <Waves currentColor={archive.backgroundColor} />
           {archive.title && (
             <header className={styles.header}>
               {archive.title && <h2>{archive.title}</h2>}

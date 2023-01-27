@@ -76,7 +76,6 @@
 
   .primaryMenu {
     border-bottom: 1px solid;
-    background-color: $green;
     width: 100%;
     position: sticky;
     z-index: 50;
@@ -90,6 +89,10 @@
       color: $yellow;
     }
 
+  }
+
+  .primaryMenu.colorful {
+    background-color: $green;
   }
 
   .wrapper {

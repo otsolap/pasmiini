@@ -39,8 +39,12 @@ main {
   position: relative;
   max-height: 80px;
   background-color: transparent;
-  margin-top: -$triple;
   z-index: 40;
+}
+
+.rotated {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .btn,
@@ -109,7 +113,6 @@ main {
   color: $creamyWhite;
 }
 
-
 .bg-blue {
   background-color: $blue;
 }
@@ -133,7 +136,6 @@ main {
 .color-pink {
   color: $pink;
 }
-
 
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {

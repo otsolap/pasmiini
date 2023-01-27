@@ -17,7 +17,6 @@
 .wrapper {
   gap: $single;
   flex-wrap: wrap;
-  margin-bottom: $single;
 }
 
 .item {
@@ -30,7 +29,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: center;
-  margin-bottom: $single;
 }
 
 .imageContainer {

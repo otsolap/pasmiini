@@ -6,10 +6,11 @@ import Waves from "@/partials/Waves";
 
 const Highlight = ({ highlight }) => {
   return (
+    <>
+      <Waves currentColor={highlight.backgroundColor} />
       <section
         className={`${styles.highlight} bg-${highlight.backgroundColor} `}
       >
-      <Waves currentColor={highlight.backgroundColor}  />
         {highlight.image && (
           <figue className={styles.imageContainer}>
             <Image
@@ -39,6 +40,8 @@ const Highlight = ({ highlight }) => {
           </footer>
         )}
       </section>
+      <Waves rotated  currentColor={highlight.backgroundColor} />
+    </>
   );
 };
 

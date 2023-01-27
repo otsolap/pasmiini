@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/components/hero.module.scss";
 import YoutubeEmbed from "@/partials/YoutubeEmbed";
+import Waves from "@/partials/Waves";
 
 const Hero = ({ hero }) => {
   const router = useRouter();

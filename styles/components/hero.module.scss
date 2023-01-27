@@ -72,12 +72,12 @@
 
   .mediaContainer,
   .contentContainer {
-    max-height: 625px;
     max-width: calc($container-desktop / 2);
     flex: 0 0 50%;
   }
 
   .mediaContainer {
+    max-height: 625px;
     border-top-right-radius: $single;
     border-bottom-right-radius: $single;
   }
@@ -118,6 +118,8 @@
       font-size: 1.5rem;
       padding-bottom: $double;
     }
+
+    content: $quadruple;
   }
 
   .shift {
