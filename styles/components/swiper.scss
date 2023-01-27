@@ -9,7 +9,6 @@ Swiper.JS overwrites
 .serviceCarousel,
 .heroCarousel,
 .imageCarousel {
-  
   .swiper-button-next,
   .swiper-button-prev {
     color: $creamyWhite;
@@ -53,19 +52,15 @@ Service & Refences
   }
 }
 
-.serviceCarousel,
-.imageCarousel,
-.heroCarousel {
+.bg-green {
   .swiper-pagination-bullet {
     border-color: $creamyWhite;
   }
+}
 
-  .green-circle {
+.bg-creamyWhite {
+  .swiper-pagination-bullet {
     border-color: $green;
-  }
-
-  .green-circle.swiper-pagination-bullet-active {
-    border-color: $yellow;
   }
 }
 

@@ -6,13 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay, Pagination, EffectCoverflow } from "swiper";
 import styles from "@/styles/components/serviceCarousel.module.scss";
-import Waves from "@/partials/Waves";
 import YoutubeEmbed from "@/partials/YoutubeEmbed";
 
 const ServiceCarousel = ({ content }) => {
   return (
-    <>
-      <Waves currentColor={content.backgroundColor} />
       <section
         className={`
       bg-${content.backgroundColor}`}
@@ -51,11 +48,6 @@ const ServiceCarousel = ({ content }) => {
             rewind={true}
             pagination={{
               clickable: true,
-              renderBullet: function () {
-                return `<span class="swiper-pagination-bullet ${
-                  content.model === "services" ? "green-circle" : null
-                }"></span>`;
-              },
             }}
             modules={[Autoplay, Pagination, EffectCoverflow]}
           >
@@ -106,8 +98,6 @@ const ServiceCarousel = ({ content }) => {
           </Swiper>
         )}
       </section>
-      <Waves  rotated currentColor={content.backgroundColor} />
-    </>
   );
 };
 

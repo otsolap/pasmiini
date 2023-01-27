@@ -3,10 +3,11 @@
     "title": "Hero-Otsikko max 50 kirjainta pitkä.",
     "summary": "Tämä on Heron alaotsikko. Herolohko antaa sinulle vaihtoehdon täyttää koko lohkon kuvalla, tai jakaa kuvan 50% tekstikentän kanssa. Kuvan sijainninkin voit muuttaa. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta. Kuvan sijaan myös mahdollista liittää video youtube-linkin muodossa.",
     "align": "left",
-    "media": "image",
+    "media": "video",
     "image": "/images/Karusellikuva_02.png",
     "mediaWidth": true,
     "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+    "autoplay": true,
     "buttons": [
       {
         "title": "Tutustu ohjelmiin",
@@ -20,9 +21,9 @@
       {
         "type": "image",
         "image": "/images/Karusellikuva_02.png",
-        "mediaWidth": true,
+        "mediaWidth": false,
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
-        "body": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa. \n\nPolkupyörän talvisäilytys ja perushuolto 100 €. Nouto myymälöidemme lähialueilta 10 €",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen.  Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.",
         "buttons": [
           {
             "title": "Uudet nettisivut 2",
@@ -31,11 +32,11 @@
         ]
       },
       {
-        "type": "image",
+        "type": "markdown",
         "image": "/images/Karusellikuva_02.png",
         "mediaWidth": false,
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
-        "body": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa. \n\nPolkupyörän talvisäilytys ja perushuolto 100 €. Nouto myymälöidemme lähialueilta 10 €",
+        "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen.  Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.",
         "highlightList": [
           {
             "title": "Uudet nettisivut"
@@ -191,7 +192,7 @@
   "references": {
     "title": "Referenssi-lohkon Tekstisisältö",
     "summary": "Yksittäiseen hyötyyn voit lisätä kuvan, logon tai ikonin. Hyötyjä saa olla maksimissaan 5 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
-    "backgroundColor": "creamyWhite",
+    "backgroundColor": "green",
     "items": [
       {
         "type": "image",

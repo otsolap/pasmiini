@@ -96,6 +96,12 @@
     position: absolute;
     max-width: 1440px;
     inset: 0;
+    
+    .video {
+      height: 612px;
+      max-height: 612px;
+    }
+  
   }
 
   .mediaFirst,

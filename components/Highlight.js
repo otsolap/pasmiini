@@ -2,12 +2,9 @@ import styles from "@/styles/components/highlight.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import MarkdownBlock from "@/partials/MarkdownBlock";
-import Waves from "@/partials/Waves";
 
 const Highlight = ({ highlight }) => {
   return (
-    <>
-      <Waves currentColor={highlight.backgroundColor} />
       <section
         className={`${styles.highlight} bg-${highlight.backgroundColor} `}
       >
@@ -40,8 +37,6 @@ const Highlight = ({ highlight }) => {
           </footer>
         )}
       </section>
-      <Waves rotated  currentColor={highlight.backgroundColor} />
-    </>
   );
 };
 

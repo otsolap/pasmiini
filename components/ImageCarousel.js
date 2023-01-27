@@ -5,12 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
 import styles from "@/styles/components/imageCarousel.module.scss";
-import Waves from "@/partials/Waves";
 
 const ImageCarousel = ({ imageCarousel }) => {
   return (
-    <>
-      <Waves currentColor={imageCarousel.backgroundColor} />
       <section
         className={`${styles.carousel} 
           bg-${imageCarousel.backgroundColor}`}
@@ -71,8 +68,6 @@ const ImageCarousel = ({ imageCarousel }) => {
           </Swiper>
         )}
       </section>
-      <Waves  rotated currentColor={imageCarousel.backgroundColor} />
-    </>
   );
 };
 

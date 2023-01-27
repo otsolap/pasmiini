@@ -77,6 +77,13 @@ collections:
                   required: false,
                   hint: "Muista valita mediakentästä videokenttä",
                 }
+              - {
+                  label: "Video käynnistyy automaattisesti",
+                  name: "autoplay",
+                  widget: "boolean",
+                  required: false,
+                  hint: "Pyöritetäänkö videokäyntiin automaattisesti?",
+                }
               - label: "Toimintakehoitteet"
                 name: "buttons"
                 widget: list

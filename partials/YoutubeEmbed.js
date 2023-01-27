@@ -1,7 +1,7 @@
 import React from "react";
 import { YouTubeGetID } from "@/utils/index";
 
-const YoutubeEmbed = ({ src, className }) => {
+const YoutubeEmbed = ({ src, className, autoplay }) => {
   return (
     <iframe
       className={`youtube ${className}`}
@@ -12,6 +12,9 @@ const YoutubeEmbed = ({ src, className }) => {
       hl="fi"
       modestbranding="1"
       title="Pasmiini Video"
+      allow="autoPlay"
+      autoPlay={autoplay == true ? 1 : 0}
+      muted
       src={`https://www.youtube.com/embed/${YouTubeGetID(src)}`}
     />
   );

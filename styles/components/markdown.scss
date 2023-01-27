@@ -25,7 +25,12 @@
       padding-bottom: 0.25rem;
     }
 
+    strong {
+      color: $blue;
+    }
+
     li:has(strong) {
+      list-style-image: url("/icons/checkmark-green.svg");
       font-size: 1.125rem;
       margin-left: $single;
       font-family: "Bitter", serif;
@@ -41,50 +46,34 @@
       max-height: 350px;
       @include border-radius($single);
     }
+
+    a {
+      color: $blue;
+    }
   }
 }
 
 // Green background
 .bg-green {
   .markdown {
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-      strong {
+    .article {
+      h2,
+      h3,
+      h4,
+      h5,
+      p {
+        strong {
+          color: $yellow;
+        }
+      }
+
+      li:has(strong) {
+        list-style-image: url("/icons/checkmark-yellow.svg");
+      }
+
+      a {
         color: $yellow;
       }
-    }
-
-    li:has(strong) {
-      list-style-image: url("/icons/checkmark-yellow.svg");
-    }
-
-    a {
-      color: $yellow;
-    }
-  }
-}
-
-// Creamywhite background
-.bg-creamywhite {
-  .markdown {
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-      strong {
-        color: $blue;
-      }
-    }
-
-    li:has(strong) {
-      list-style-image: url("/icons/checkmark-green.svg");
-    }
-    a {
-      color: $blue;
     }
   }
 }
