@@ -19,6 +19,7 @@ const Cards = ({ cards }) => {
                 image={item.image}
                 title={item.title}
                 summary={item.summary}
+                className={cards.backgroundColor == 'green' ? '' : styles.reverseColors}
               />
             );
           })}

@@ -6,6 +6,7 @@ import Highlight from "@/components/Highlight";
 import Cards from "@/components/Cards";
 import Accordion from "@/components/Accordion";
 import Textarea from "@/components/Textarea";
+import Waves from "@/partials/Waves";
 
 const Service = ({
   meta,
@@ -26,15 +27,35 @@ const Service = ({
       <Meta meta={meta} />
       <section id="services">
         <Hero hero={hero} />
+        <Waves currentColor={textarea.backgroundColor} />
         <Textarea textarea={textarea} />
         <Cards cards={cards} />
+        <Waves rotated currentColor={cards.backgroundColor} />
         <MediaMix mediaMix={mediaMix} />
+        <Waves currentColor={mediaMix_2.backgroundColor} />
         <MediaMix mediaMix={mediaMix_2} />
+        <Waves
+          rotated
+          currentColor={mediaMix_2.backgroundColor}
+          siblingColor={mediaMix_3.backgroundColor}
+        />
         <MediaMix mediaMix={mediaMix_3} />
+        <Waves
+          rotated
+          currentColor={mediaMix_3.backgroundColor}
+          siblingColor={mediaMix_4.backgroundColor}
+        />
         <MediaMix mediaMix={mediaMix_4} />
+        <Waves
+          rotated
+          currentColor={mediaMix_4.backgroundColor}
+          siblingColor={mediaMix_5.backgroundColor}
+        />
         <MediaMix mediaMix={mediaMix_5} />
+        <Waves rotated currentColor={mediaMix_5.backgroundColor} />
         <Accordion accordion={accordion} />
         <Textarea textarea={textarea_2} />
+        <Waves currentColor={highlight.backgroundColor} />
         <Highlight highlight={highlight} />
       </section>
     </>
@@ -65,9 +86,7 @@ export async function getStaticProps(context) {
   let data = JSON.parse(service);
 
   // getting the accordion data
-  let files = await fs.promises.readdir(
-    process.env.ACCORDION_DIR_PATH
-  );
+  let files = await fs.promises.readdir(process.env.ACCORDION_DIR_PATH);
   let file;
   let accordionData = [];
 

@@ -1,27 +1,41 @@
-import Meta from '@/components/Meta'
-import MediaMix from '@/components/MediaMix'
+import Meta from "@/components/Meta";
+import MediaMix from "@/components/MediaMix";
 import Textarea from "@/components/Textarea";
-import Cards from '@/components/Cards';
-import ImageCarousel from '@/components/ImageCarousel';
-import Highlight from '@/components/Highlight'
+import Cards from "@/components/Cards";
+import ImageCarousel from "@/components/ImageCarousel";
+import Highlight from "@/components/Highlight";
+import Waves from "@/partials/Waves";
 
-const About = ({ meta, mediaMix, textarea, cards, imageCarousel, highlight }) => {
+const About = ({
+  meta,
+  mediaMix,
+  textarea,
+  cards,
+  imageCarousel,
+  highlight,
+}) => {
   return (
     <>
       <Meta meta={meta} />
       <MediaMix mediaMix={mediaMix} />
+      <Waves rotated currentColor={mediaMix.backgroundColor} />
       <Textarea textarea={textarea} />
+      <Waves currentColor={cards.backgroundColor} />
       <Cards cards={cards} />
+      <Waves rotated currentColor={cards.backgroundColor} />
       <ImageCarousel imageCarousel={imageCarousel} />
+      <Waves currentColor={highlight.backgroundColor} />
       <Highlight highlight={highlight} />
     </>
   );
 };
 
 export async function getStaticProps() {
-  const about = await import(`../../content/pages/about.json`)
-  const site = await import(`../../content/settings/site.json`)
-  const jasmiini = await import(`../../content/authors/jasmiini_peuramaki.json`)
+  const about = await import(`../../content/pages/about.json`);
+  const site = await import(`../../content/settings/site.json`);
+  const jasmiini = await import(
+    `../../content/authors/jasmiini_peuramaki.json`
+  );
 
   return {
     props: {
@@ -47,7 +61,7 @@ export async function getStaticProps() {
       },
       textarea: {
         body: about.textarea.body,
-        backgroundColor: about.textarea.backgroundColor
+        backgroundColor: about.textarea.backgroundColor,
       },
       cards: {
         title: site.cards.title,
@@ -66,8 +80,8 @@ export async function getStaticProps() {
         title: site.highlight.title,
         body: site.highlight.body,
         button: site.highlight.button,
-        backgroundColor: site.highlight.backgroundColor
-      }
+        backgroundColor: site.highlight.backgroundColor,
+      },
     },
   };
 }

@@ -34,9 +34,7 @@ Swiper.JS overwrites
   }
 }
 
-/*
-Service & Refences
-*/
+/* Service & Refences */
 .serviceCarousel {
   &__figure {
     position: relative;
@@ -64,6 +62,8 @@ Service & Refences
   }
 }
 
+/* Image carousel */
+
 .imageCarousel {
   &__footer {
     width: inherit;
@@ -75,11 +75,17 @@ Service & Refences
   }
 }
 
+.bg-creamyWhite {
+  .imageCarousel {
+    &__footer {
+      color: $green;
+    }
+  }
+}
+
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
-  /*
-Service & Refences
-*/
+  /* Service & Refences */
   .serviceCarousel {
     $p: &;
 
@@ -102,9 +108,7 @@ Service & Refences
       }
     }
   }
-  /*
-// Image Carousel
-  */
+  /* Image Carousel */
 
   .imageCarousel {
     $p: &;

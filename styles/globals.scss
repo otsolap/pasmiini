@@ -38,8 +38,12 @@ main {
 .waves {
   position: relative;
   max-height: 80px;
-  background-color: transparent;
   z-index: 40;
+
+  &--footer {
+    background-color: $blue;
+  }
+
 }
 
 .rotated {

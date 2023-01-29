@@ -24,8 +24,8 @@ const Blog = ({ meta, hero, archive, items, highlight }) => {
       <Meta meta={meta} />
       <section id="blog-archive">
         <Hero hero={hero} />
+        <Waves currentColor={archive.backgroundColor} />
         <div className={styles.blogs}>
-          <Waves currentColor={archive.backgroundColor} />
           {archive.title && (
             <header className={styles.header}>
               {archive.title && <h2>{archive.title}</h2>}
@@ -51,6 +51,7 @@ const Blog = ({ meta, hero, archive, items, highlight }) => {
             onPageChange={onPageChange}
           />
         </div>
+        <Waves currentColor={highlight.backgroundColor} />
         <Highlight highlight={highlight} />
       </section>
     </>

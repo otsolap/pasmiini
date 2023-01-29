@@ -10,6 +10,10 @@
     h6,
     p {
       margin-bottom: $single;
+
+      strong {
+        color: $blue;
+      }
     }
 
     p {
@@ -23,10 +27,6 @@
     ul li {
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
-    }
-
-    strong {
-      color: $blue;
     }
 
     li:has(strong) {
@@ -53,14 +53,17 @@
   }
 }
 
-// Green background
-.bg-green {
+// green & blue background
+.bg-green,
+.bg-blue {
   .markdown {
-    .article {
+    article {
+      h1,
       h2,
       h3,
       h4,
       h5,
+      h6,
       p {
         strong {
           color: $yellow;
@@ -68,6 +71,7 @@
       }
 
       li:has(strong) {
+        color: $creamyWhite;
         list-style-image: url("/icons/checkmark-yellow.svg");
       }
 

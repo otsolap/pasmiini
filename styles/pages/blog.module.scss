@@ -2,6 +2,11 @@
 @import "../partials/variables";
 @import "../partials/breakpoints";
 
+.articleLayout {
+  background-color: $green;
+  padding-bottom: $single;
+}
+
 .articleContainer,
 .imageContainer,
 .content {
@@ -17,7 +22,7 @@
 
 .articleContainer {
   background-color: $creamyWhite;
-  margin-bottom: $single;
+  color: $green;
 }
 
 .imageContainer {
@@ -42,9 +47,12 @@
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
 
+  .articleLayout {
+    padding-bottom: $double;
+  }
+
   .articleContainer {
     max-width: $width-max-article-layout;
-    margin-bottom: $double;
   }
 
   .content {

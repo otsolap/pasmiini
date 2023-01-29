@@ -29,6 +29,12 @@
   padding: $single;
   width: 100%;
   align-items: center;
+  background-color: $creamyWhite;
+  color: $green;
+}
+.reverseColors {
+  background-color: $green;
+  color: $creamyWhite;
 }
 
 .imageContainer {

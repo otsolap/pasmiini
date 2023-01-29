@@ -4,12 +4,13 @@ import Image from "next/image";
 import styles from "@/styles/pages/blog.module.scss";
 import Meta from "@/components/Meta";
 import MarkdownBlock from "@/partials/MarkdownBlock";
-import ShareButtons from "@/components/ShareButtons";
+import ShareButtons from "@/partials/ShareButtons";
 import MediaMix from "@/components/MediaMix";
 import Cards from "@/components/Cards";
 import ImageCarousel from "@/components/ImageCarousel";
 import ServiceCarousel from "@/components/ServiceCarousel";
 import Highlight from "@/components/Highlight";
+import Waves from "partials/Waves";
 
 const Slug = ({
   meta,
@@ -23,33 +24,43 @@ const Slug = ({
   return (
     <>
       <Meta meta={meta} />
-      <section className={styles.articleContainer}>
-        <div className={styles.content}>
-          {blog.image && (
-            <figure className={styles.imageContainer}>
-              <Image
-                className={styles.image}
-                src={blog.image}
-                alt={blog.title}
-                fill
-                quality={100}
-                sizes="(max-width: 1024x) 100vw,
+      <div className={styles.articleLayout}>
+        <div className={styles.articleContainer}>
+          <div className={styles.content}>
+            {blog.image && (
+              <figure className={styles.imageContainer}>
+                <Image
+                  className={styles.image}
+                  src={blog.image}
+                  alt={blog.title}
+                  fill
+                  quality={100}
+                  sizes="(max-width: 1024x) 100vw,
                 33vw"
-              />
-            </figure>
-          )}
-          {blog.title && <h1>{blog.title}</h1>}
-          {blog.author && <h2>Kirjoittanut: {blog.author}</h2>}
-          {blog.body && (
-            <MarkdownBlock className={styles.markdown} markdown={blog.body} />
-          )}
-          <ShareButtons description={blog.title} />
+                />
+              </figure>
+            )}
+            {blog.title && <h1>{blog.title}</h1>}
+            {blog.author && <h2>Kirjoittanut: {blog.author}</h2>}
+            {blog.body && (
+              <MarkdownBlock className={styles.markdown} markdown={blog.body} />
+            )}
+            <ShareButtons description={blog.title} />
+          </div>
         </div>
-      </section>
+      </div>
+      <Waves currentColor={mediaMix.backgroundColor} siblingColor={"green"} />
       <MediaMix mediaMix={mediaMix} />
+      <Waves currentColor={cards.backgroundColor} />
       <Cards cards={cards} />
+      <Waves rotated currentColor={cards.backgroundColor} />
       <ImageCarousel imageCarousel={imageCarousel} />
+      <Waves currentColor={references.backgroundColor} />
       <ServiceCarousel content={references} />
+      <Waves
+        currentColor={highlight.backgroundColor}
+        siblingColor={references.backgroundColor}
+      />
       <Highlight highlight={highlight} />
     </>
   );

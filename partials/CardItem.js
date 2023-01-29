@@ -1,9 +1,9 @@
 import styles from "@/styles/components/cards.module.scss";
 import Image from "next/image";
 
-const MediaMixItem = ({ image, title, summary }) => {
+const MediaMixItem = ({ image, title, summary, className }) => {
   return (
-    <article className={styles.card}>
+    <article className={`${styles.card} ${className ? className : null}`}>
       {image && (
         <figure className={styles.imageContainer}>
           <Image

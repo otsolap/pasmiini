@@ -9,7 +9,7 @@ import home from "@/content/pages/home.json";
 import styles from "@/styles/components/header.module.scss";
 
 const Header = () => {
-  const [background, toggle] = useToggle(true);
+  const [background, toggle] = useToggle(false);
   const router = useRouter();
   const { brand, navigation } = nav;
   const { calender } = site;

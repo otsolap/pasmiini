@@ -8,7 +8,7 @@ import Waves from "@/partials/Waves";
 const Footer = () => {
   return (
     <>
-      <Waves currentColor={"green"} />
+      <Waves footer currentColor={"green"} />
       <footer className={styles.footer}>
         <div className={styles.columnContainer}>
           <FooterColumnLogo {...footer.brand} />

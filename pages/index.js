@@ -56,11 +56,10 @@ const Index = ({
         <ServiceCarousel content={references} />
         <Waves rotated currentColor={references.backgroundColor} />
         <BlogList blogs={blogs} />
-        <Waves currentColor={highlight.backgroundColor} />
-        <Highlight highlight={highlight} />
-        <Waves rotated currentColor={highlight.backgroundColor} />
         <Waves currentColor={textarea.backgroundColor} />
         <Textarea textarea={textarea} />
+        <Waves currentColor={highlight.backgroundColor} />
+        <Highlight highlight={highlight} />
       </section>
     </>
   );
