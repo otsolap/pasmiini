@@ -57,11 +57,13 @@ const Slug = ({
       <ImageCarousel imageCarousel={imageCarousel} />
       <Waves currentColor={references.backgroundColor} />
       <ServiceCarousel content={references} />
-      <Waves
-        currentColor={highlight.backgroundColor}
-        siblingColor={references.backgroundColor}
-      />
+      <Waves currentColor={highlight.backgroundColor} siblingColor={references.backgroundColor} />
       <Highlight highlight={highlight} />
+      <Waves
+        rotated
+        currentColor={highlight.backgroundColor}
+        siblingColor={"green"}
+      />
     </>
   );
 };
