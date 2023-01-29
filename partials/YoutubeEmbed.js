@@ -4,18 +4,16 @@ import { YouTubeGetID } from "@/utils/index";
 const YoutubeEmbed = ({ src, className, autoplay }) => {
   return (
     <iframe
+      title="Pasmiini"
       className={`youtube ${className}`}
-      playsInline
-      controls="0"
-      fs="0"
-      rel="0"
-      hl="fi"
-      modestbranding="1"
-      title="Pasmiini Video"
-      allow="autoPlay"
-      autoPlay={autoplay == true ? 1 : 0}
-      muted
-      src={`https://www.youtube.com/embed/${YouTubeGetID(src)}`}
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+      src={`https://www.youtube.com/embed/${YouTubeGetID(src)}?controls=${
+        autoplay == false ? 1 : 0
+      }&playsinline=0&rel=0&modestbranding=1&autoplay=${
+        autoplay == true ? 1 : 0
+      }&muted=${autoplay == true ? 1 : 0}
+      `}
     />
   );
 };

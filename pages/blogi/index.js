@@ -7,7 +7,7 @@ import Highlight from "@/components/Highlight";
 import Pagination from "@/components/navigation/Pagination";
 import { paginate } from "@/utils/index";
 import Waves from "@/partials/Waves";
-import styles from "@/styles/components/blog.module.scss";
+import styles from "@/styles/pages/archive.module.scss";
 
 const Blog = ({ meta, hero, archive, items, highlight }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -25,7 +25,7 @@ const Blog = ({ meta, hero, archive, items, highlight }) => {
       <section id="blog-archive">
         <Hero hero={hero} />
         <Waves currentColor={archive.backgroundColor} />
-        <div className={styles.blogs}>
+        <div className={styles.items}>
           {archive.title && (
             <header className={styles.header}>
               {archive.title && <h2>{archive.title}</h2>}

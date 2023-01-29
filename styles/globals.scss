@@ -37,7 +37,7 @@ main {
 
 .waves {
   position: relative;
-  max-height: 80px;
+  height: 20px;
   z-index: 40;
 }
 
@@ -116,5 +116,10 @@ main {
         max-height: 720px;
       }
     }
+  }
+
+  .waves {
+    height: 80px;
+    max-height: 80px;
   }
 }

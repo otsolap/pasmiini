@@ -1,0 +1,70 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+/* Archive */
+
+.items {
+    margin-bottom: $single;
+  }
+  
+  .header {
+    padding-bottom: $double;
+  }
+  
+  .header,
+  .wrapper {
+    @include display-flex();
+    @include flex-direction(column);
+    gap: $single;
+  }
+  
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .footer {
+    padding-top: $single;
+    padding-bottom: single;
+    width: 100%;
+    @include display-flex;
+    justify-content: center;
+  }
+
+/* DESKTOP STYLES */
+@media (width >= $container-desktop) {
+    .items {
+        margin-bottom: $double;
+      }
+    
+      .header {
+        max-width: calc($container-desktop / 2);
+        flex: 0 0 50%;
+      }
+    
+      .wrapper {
+        @include flex-direction(row);
+        gap: $triple;
+      }
+    
+      .footer {
+        justify-content: flex-end;
+      }
+    
+      .blog {
+        max-width: calc(100% / 3);
+        flex: 0 0 calc(33.333% - $double);
+      }
+    
+      .imageContainer {
+        height: 200px;
+        width: 370px;
+      }
+}
+
+
+
+
+
+
+

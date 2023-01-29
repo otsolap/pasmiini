@@ -2,26 +2,6 @@
 @import "../partials/variables";
 @import "../partials/breakpoints";
 
-/* Archive */
-
-.blogs {
-  margin-bottom: $single;
-}
-
-.header {
-  padding-bottom: $double;
-}
-
-.header,
-.wrapper {
-  @include display-flex();
-  @include flex-direction(column);
-  gap: $single;
-}
-
-.wrapper {
-  flex-wrap: wrap;
-}
 
 /* Blog Section */
 
@@ -80,8 +60,6 @@
   }
 
   .footer {
-    width: 100%;
-    @include display-flex;
     justify-content: flex-end;
   }
 

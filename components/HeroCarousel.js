@@ -9,12 +9,10 @@ import styles from "@/styles/components/heroCarousel.module.scss";
 
 const HeroCarousel = ({ heroCarousel }) => {
   return (
-    <section
-      className={`${styles.carousel} bg-${heroCarousel.backgroundColor}`}
-    >
+    <section className={`bg-${heroCarousel.backgroundColor}`}>
       {heroCarousel && (
         <Swiper
-          className={`heroCarousel ${styles.wrapper}`}
+          className={`heroCarousel`}
           spaceBetween={0}
           slidesPerView={1}
           autoplay={{

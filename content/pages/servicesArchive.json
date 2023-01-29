@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Hero-Otsikko max 50 kirjainta pitkä.",
+    "summary": "Tämä on Heron alaotsikko. Herolohko antaa sinulle vaihtoehdon täyttää koko lohkon kuvalla, tai jakaa kuvan 50% tekstikentän kanssa. Kuvan sijainninkin voit muuttaa. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta. Kuvan sijaan myös mahdollista liittää video youtube-linkin muodossa.",
+    "align": "left",
+    "media": "video",
+    "image": "/images/Karusellikuva_02.png",
+    "mediaWidth": false,
+    "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
+    "buttons": [
+      {
+        "title": "Tutustu ohjelmiin",
+        "url": "/palvelut"
+      }
+    ]
+  },
+  "archive": {
+    "title": "Blogi-arkiston otsikko",
+    "summary": "",
+    "backgroundColor": "creamyWhite"
+  },
+  "meta": {
+    "title": "Pasmiini",
+    "description": "Work for yourself on yourself",
+    "url": "pasmiini.fi",
+    "image": "/images/Karusellikuva_02.png"
+  }
+}
