@@ -11,7 +11,7 @@ const Calender = ({ meta, textarea }) => {
 };
 
 export async function getStaticProps() {
-  const calender = await import(`../../content/calender.json`);
+  const calender = await import(`../../content/pages/calender.json`);
 
   return {
     props: {
