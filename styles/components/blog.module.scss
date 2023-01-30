@@ -5,6 +5,29 @@
 
 /* Blog Section */
 
+.header {
+  padding-bottom: $double;
+}
+
+.header,
+.wrapper {
+  @include display-flex();
+  @include flex-direction(column);
+  gap: $single;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.footer {
+  padding-top: $single;
+  padding-bottom: single;
+  width: 100%;
+  @include display-flex;
+  justify-content: center;
+}
+
 
 /* Blog Card */
 

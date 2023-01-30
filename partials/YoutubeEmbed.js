@@ -12,7 +12,8 @@ const YoutubeEmbed = ({ src, className, autoplay }) => {
         autoplay == false ? 1 : 0
       }&playsinline=0&rel=0&modestbranding=1&autoplay=${
         autoplay == true ? 1 : 0
-      }&muted=${autoplay == true ? 1 : 0}
+      }&mute=${autoplay == true ? 1 : 0}
+      &loop=${autoplay == true ? 1 : 0}
       `}
     />
   );
