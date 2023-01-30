@@ -4,13 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 import site from "@/content/settings/site.json";
 
-
 const BlogItem = ({ image, title, slug }) => {
   const router = useRouter();
+  const BLOG_PATH = "blogi/";
+  let path;
+  if (router.pathname == "/") {
+    path = router.asPath + BLOG_PATH + slug;
+  } else {
+    path = router.asPath + '/' + slug;
+  }
 
   return (
     <article className={styles.blog}>
-      <Link className={styles.imageContainer} href={`/${router.asPath}/${slug}`}>
+      <Link passHref className={styles.imageContainer} href={path}>
         {image ? (
           <Image
             className={styles.image}
@@ -35,7 +41,7 @@ const BlogItem = ({ image, title, slug }) => {
       </Link>
       {title && (
         <h3 className={styles.title}>
-          <Link href={`/blogi/${slug}`}>{title}</Link>
+          <Link href={path}>{title}</Link>
         </h3>
       )}
     </article>

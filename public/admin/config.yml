@@ -421,7 +421,7 @@ collections:
                 name: "body"
                 required: false
                 widget: "markdown"
-                
+
               - label: "Taustaväri"
                 name: "backgroundColor"
                 required: false
@@ -546,7 +546,7 @@ collections:
                 name: "title"
                 widget: "string"
                 required: false
-                
+
               - label: "Arkiston kuvaus"
                 name: "summary"
                 widget: "string"
@@ -559,9 +559,7 @@ collections:
                 default: ["creamyWhite"]
                 options:
                   - { label: "Tummanvihreä", value: "green" }
-                  - { label: "Kermanvalkoinen", value: "creamyWhite" }                
-
-                
+                  - { label: "Kermanvalkoinen", value: "creamyWhite" }
 
           - label: "Sivuston metatiedot"
             name: "meta"
@@ -628,6 +626,63 @@ collections:
                   widget: "image",
                   required: false,
                 }
+
+      - label: "Ajanvaraus"
+        name: "calender"
+        file: "content/pages/calender.json"
+        fields:
+          - label: "Tekstikenttä"
+            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+            name: "textarea"
+            widget: object
+            collapsed: true
+            fields:
+              - label: "Tekstikenttä"
+                name: "body"
+                required: false
+                widget: "markdown"
+
+              - label: "Taustaväri"
+                name: "backgroundColor"
+                required: false
+                widget: "select"
+                default: ["creamyWhite"]
+                options:
+                  - { label: "Tummanvihreä", value: "green" }
+                  - { label: "Kermanvalkoinen", value: "creamyWhite" }
+
+          - label: "Sivuston metatiedot"
+            name: "meta"
+            collapsed: true
+            hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
+            widget: object
+            fields:
+              - {
+                  label: "Sivun otsikko",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Sivun kuvaus",
+                  name: "description",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Sivun linkki",
+                  name: "url",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Sivun kuva",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+
+
       - label: "Porrastreenit"
         name: "treenit"
         file: "content/pages/treenit.json"
@@ -638,7 +693,6 @@ collections:
             widget: object
             collapsed: true
             fields:
-
               - label: "Tekstikenttä"
                 name: "body"
                 required: false
@@ -692,13 +746,15 @@ collections:
     create: true
     slug: "{{field.slug}}"
     fields:
-      - {
-          label: "Palvelun nimi",
-          name: "title",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Osoite", name: "slug", widget: "string", required: false }
+      - label: "Palvelun nimi"
+        name: "title"
+        widget: "string"
+        required: true
+        
+      - label: "Osoite"
+        name: "slug"
+        widget: "string" 
+        required: true 
 
       - label: "Hero"
         hint: "Heroon voi laittaa yhden suuren otsikon, jonka maksimimitta on 50-kirjainta. Pääotsikon alle voidaan liittää vapaamuotoinen kuvaus. Yleisesti Kuva täyttää puolet lohkon koon, mutta halutessasi voit leventää kuvan ottamaan 100% lohkosta. Heron saa asettaa joko vasemmalle tai oikealle puolelle. Voit myös kuvan sijaan liittää .gif liikkuvan-kuvan tai YouTube-videon. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta."
@@ -802,12 +858,12 @@ collections:
             widget: "string"
             max: 50
             required: false
-          
+
           - label: "Kuvaus"
             name: "summary"
             widget: "text"
             required: false
-          
+
           - label: "Taustaväri"
             name: "backgroundColor"
             required: false
@@ -1534,12 +1590,12 @@ collections:
                 widget: "string"
                 max: 50
                 required: false
-              
+
               - label: "Kuvaus"
                 name: "summary"
                 widget: "text"
                 required: false
-              
+
               - label: "Taustaväri"
                 name: "backgroundColor"
                 required: false
@@ -1548,7 +1604,7 @@ collections:
                 options:
                   - { label: "Tummanvihreä", value: "green" }
                   - { label: "Kermanvalkoinen", value: "creamyWhite" }
-                
+
               - label: "Kortit"
                 name: "items"
                 widget: list
@@ -1622,12 +1678,12 @@ collections:
         file: "content/settings/footer.json"
         fields:
           - label: "Logo"
-            name: "logo"
+            name: "brand"
             widget: object
             fields:
               - {
                   label: "Logo",
-                  name: "imageLogo",
+                  name: "logo",
                   widget: "image",
                   required: false,
                 }
