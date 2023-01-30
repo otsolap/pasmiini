@@ -1,12 +1,16 @@
+import { useRouter } from "next/router";
 import styles from "@/styles/components/blog.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import site from "@/content/settings/site.json";
 
+
 const BlogItem = ({ image, title, slug }) => {
+  const router = useRouter();
+
   return (
     <article className={styles.blog}>
-      <Link className={styles.imageContainer} href={`/blogi/${slug}`}>
+      <Link className={styles.imageContainer} href={`/${router.asPath}/${slug}`}>
         {image ? (
           <Image
             className={styles.image}
