@@ -46,7 +46,7 @@ const MediaMixItem = ({ type, image, mediaWidth, video, body, buttons }) => {
       {type == "markdown" && buttons && (
         <div className={styles.buttonWrapper}>
           {buttons.map((button, i) => (
-            <Link key={i} href={button.url} className={`btn`}>
+            <Link key={i} href={button.url} className={`btn ${styles.button}`}>
               {button.title}
             </Link>
           ))}

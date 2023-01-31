@@ -14,6 +14,7 @@
   @include display-flex();
   @include flex-direction(column);
   gap: $single;
+  padding: $single;
 }
 
 .wrapper {
@@ -80,6 +81,7 @@
   .wrapper {
     @include flex-direction(row);
     gap: $triple;
+    padding: initial;
   }
 
   .footer {

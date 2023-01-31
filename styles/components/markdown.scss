@@ -49,6 +49,16 @@
 
     a {
       color: $blue;
+      text-decoration: underline;
+      text-underline-offset: $half;
+      padding-right: $half;
+
+      &::after {
+        content: url("/icons/circle-arrow-blue.svg");
+        display: inline-block;
+        width: $single;
+        height: $single;
+      }
     }
   }
 }
@@ -77,6 +87,9 @@
 
       a {
         color: $yellow;
+        &::after {
+          content: url("/icons/circle-arrow-yellow.svg");
+        }
       }
     }
   }

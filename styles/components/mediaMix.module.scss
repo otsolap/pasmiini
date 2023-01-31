@@ -43,6 +43,12 @@
 .buttonWrapper {
   padding-top: $single;
   padding-bottom: $double;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: fit-content;
 }
 
 /* DESKTOP STYLES */
@@ -67,4 +73,15 @@
     width: 720px;
     height: 600px;
   }
+
+  .buttonWrapper {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+
 }

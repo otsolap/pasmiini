@@ -5,6 +5,7 @@
 .articleLayout {
   background-color: $green;
   padding-bottom: $single;
+  padding-top: $half;
 }
 
 .articleContainer,
@@ -35,20 +36,15 @@
   object-position: 50% 50%;
 }
 
-// Markdown is wrapped in Article.
-// These styles are for Markdown content.
-.markdown {
-  article {
-    padding: 0;
-  }
+.content {
+  padding: $single;
 }
-
 
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
-
   .articleLayout {
     padding-bottom: $double;
+    padding-top: initial;
   }
 
   .articleContainer {
@@ -63,5 +59,4 @@
     height: 512px;
     width: 720px;
   }
-
 }

@@ -52,7 +52,7 @@
 }
 
 .content {
-  padding: $triple;
+  padding: $double;
 
   h1 {
     font-size: $triple;
@@ -115,6 +115,8 @@
   }
 
   .content {
+    padding: $quadruple;
+
     h1 {
       padding-bottom: $double;
       font-size: 3.5rem;
@@ -125,7 +127,6 @@
       padding-bottom: $double;
     }
 
-    content: $quadruple;
   }
 
   .shift {
