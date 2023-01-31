@@ -1,9 +1,13 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
-
+@import "../partials/util";
 
 /* Blog Section */
+
+.blogs {
+  @extend .container;
+}
 
 .header {
   padding-bottom: $double;
@@ -29,7 +33,6 @@
   justify-content: center;
 }
 
-
 /* Blog Card */
 
 .blog {
@@ -49,7 +52,6 @@
   margin-bottom: $single;
   height: 200px;
   width: 320px;
-
 }
 
 .image {
@@ -65,10 +67,8 @@
   width: 100%;
 }
 
-
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
-
   .blogs {
     margin-bottom: $double;
   }
@@ -97,5 +97,4 @@
     height: 200px;
     width: 370px;
   }
-
 }

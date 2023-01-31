@@ -5,9 +5,8 @@ import MarkdownBlock from "@/partials/MarkdownBlock";
 
 const Highlight = ({ highlight }) => {
   return (
-      <section
-        className={`${styles.highlight} bg-${highlight.backgroundColor} `}
-      >
+    <div className={`bg-${highlight.backgroundColor}`}>
+      <section className={styles.highlight}>
         {highlight.image && (
           <figue className={styles.imageContainer}>
             <Image
@@ -37,6 +36,7 @@ const Highlight = ({ highlight }) => {
           </footer>
         )}
       </section>
+    </div>
   );
 };
 

@@ -1,10 +1,12 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
 
 /* Archive */
 
 .items {
+    @extend .container;
     margin-bottom: $single;
   }
   

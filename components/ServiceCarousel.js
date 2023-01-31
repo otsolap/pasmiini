@@ -10,10 +10,11 @@ import YoutubeEmbed from "@/partials/YoutubeEmbed";
 
 const ServiceCarousel = ({ content }) => {
   return (
-      <section
-        className={`
-      bg-${content.backgroundColor}`}
-      >
+    <div
+      className={`
+    bg-${content.backgroundColor}`}
+    >
+      <section className={styles.serviceCarousel}>
         {content.title && (
           <header className={styles.header}>
             {content.title && <h2>{content.title}</h2>}
@@ -98,6 +99,7 @@ const ServiceCarousel = ({ content }) => {
           </Swiper>
         )}
       </section>
+    </div>
   );
 };
 

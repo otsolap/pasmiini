@@ -1,11 +1,14 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
 
 .highlight {
+    @extend .container;
     color: inherit;
     @include display-flex();
     @include flex-direction(column);
+    
 }
 
 .imageContainer {

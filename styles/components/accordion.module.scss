@@ -1,8 +1,10 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
 
 .accordion {
+  @extend .container;
   padding-bottom: $single;
 }
 

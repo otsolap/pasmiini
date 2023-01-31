@@ -10,6 +10,11 @@ const Training = ({ meta, textarea, highlight }) => {
       <Textarea textarea={textarea} />
       <Waves currentColor={highlight.backgroundColor} />
       <Highlight highlight={highlight} />
+      <Waves
+          rotated
+          currentColor={highlight.backgroundColor}
+          siblingColor={"green"}
+        />
     </>
   );
 };

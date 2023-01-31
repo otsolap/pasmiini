@@ -3,6 +3,7 @@ import styles from "@/styles/components/footer.module.scss";
 import FooterColumnLogo from "@/partials/FooterColumnLogo";
 import FooterColumnCompany from "@/partials/FooterColumnCompany";
 import FooterColumnContact from "@/partials/FooterColumnContact";
+import Waves from "@/partials/Waves";
 
 const Footer = () => {
   return (

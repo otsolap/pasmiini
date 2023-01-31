@@ -1,7 +1,11 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
 
+.imageCarousel {
+  @extend .container;
+}
 
 .header,
 .wrapper {

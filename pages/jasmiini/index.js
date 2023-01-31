@@ -26,6 +26,11 @@ const About = ({
       <ImageCarousel imageCarousel={imageCarousel} />
       <Waves currentColor={highlight.backgroundColor} />
       <Highlight highlight={highlight} />
+      <Waves
+          rotated
+          currentColor={highlight.backgroundColor}
+          siblingColor={"green"}
+        />
     </>
   );
 };

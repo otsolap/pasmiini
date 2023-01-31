@@ -2,6 +2,7 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 @import "partials/typography";
+@import "partials/util";
 @import "components/swiper";
 @import "components/markdown";
 
@@ -30,14 +31,9 @@ main {
   background-color: $creamyWhite;
 }
 
-.container {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .waves {
   position: relative;
-  height: 20px;
+  height: 30px;
 }
 
 .rotated {
@@ -92,10 +88,6 @@ main {
 
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
-  .container {
-    max-width: $container-desktop;
-  }
-
   .btn {
     width: fit-content;
   }
@@ -118,7 +110,7 @@ main {
   }
 
   .waves {
-    height: 80px;
-    max-height: 80px;
+    height: 90px;
+    max-height: 90px;
   }
 }

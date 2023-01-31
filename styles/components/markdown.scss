@@ -49,15 +49,19 @@
 
     a {
       color: $blue;
-      text-decoration: underline;
-      text-underline-offset: $half;
-      padding-right: $half;
 
       &::after {
         content: url("/icons/circle-arrow-blue.svg");
         display: inline-block;
         width: $single;
         height: $single;
+        padding-left: $half;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        text-underline-offset: $half;
       }
     }
   }
@@ -75,6 +79,8 @@
       h5,
       h6,
       p {
+        color: $creamyWhite;
+
         strong {
           color: $yellow;
         }

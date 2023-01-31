@@ -9,7 +9,8 @@ import styles from "@/styles/components/heroCarousel.module.scss";
 
 const HeroCarousel = ({ heroCarousel }) => {
   return (
-    <section className={`bg-${heroCarousel.backgroundColor}`}>
+    <div className={`bg-${heroCarousel.backgroundColor}`}>
+    <section className={styles.heroCarousel}>
       {heroCarousel && (
         <Swiper
           className={`heroCarousel`}
@@ -57,6 +58,7 @@ const HeroCarousel = ({ heroCarousel }) => {
         </Swiper>
       )}
     </section>
+    </div>
   );
 };
 

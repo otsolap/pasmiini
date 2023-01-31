@@ -4,7 +4,8 @@ import styles from "@/styles/components/accordion.module.scss";
 
 const Accordion = ({ accordion }) => {
   return (
-    <section className={`${styles.accordion} bg-${accordion.backgroundColor}`}>
+    <div className={`bg-${accordion.backgroundColor}`}>
+    <section className={styles.accordion}>
       <div className={styles.container}>
         {accordion.image ? (
           <figure className={styles.imgContainer}>
@@ -27,6 +28,7 @@ const Accordion = ({ accordion }) => {
         )}
       </div>
     </section>
+    </div>
   );
 };
 

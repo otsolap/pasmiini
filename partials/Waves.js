@@ -6,7 +6,6 @@ const Waves = ({ currentColor, siblingColor, rotated, footer }) => {
       color-${currentColor}
       bg-${siblingColor}
       ${rotated ? "rotated" : ''}
-      ${footer ? "waves--footer" : ''}
       `}
     >
       <svg

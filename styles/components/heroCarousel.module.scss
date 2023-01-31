@@ -1,6 +1,11 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
+
+.heroCarousel {
+  @extend .container;
+}
 
 .imageContainer {
   position: relative;

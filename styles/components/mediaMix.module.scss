@@ -1,9 +1,11 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
 
 .mediaMix {
   position: relative;
+  @extend .container;
 }
 
 .mediaMix,
@@ -78,10 +80,5 @@
     margin-left: initial;
     margin-right: initial;
   }
-
-  .button {
-    width: 100%;
-  }
-
 
 }

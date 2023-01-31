@@ -1,8 +1,10 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 @import "../partials/breakpoints";
+@import "../partials/util";
 
 .cards {
+  @extend .container;
   padding: $single;
 }
 

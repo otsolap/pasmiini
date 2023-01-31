@@ -53,6 +53,11 @@ const Services = ({ meta, hero, archive, items, highlight }) => {
         </div>
         <Waves currentColor={highlight.backgroundColor} />
         <Highlight highlight={highlight} />
+        <Waves
+          rotated
+          currentColor={highlight.backgroundColor}
+          siblingColor={"green"}
+        />
       </section>
     </>
   );

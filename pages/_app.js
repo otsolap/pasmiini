@@ -4,7 +4,7 @@ import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import MobileFooter from "@/components/navigation/MobileFooter";
 // Import Swiper styles
-import 'swiper/scss';
+import "swiper/scss";
 import "swiper/scss/autoplay";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
@@ -17,9 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Header />
-      <div className="container">
-        <Component {...pageProps} />
-      </div>
+      <Component {...pageProps} />
       <Footer />
       <MobileFooter />
     </Layout>
