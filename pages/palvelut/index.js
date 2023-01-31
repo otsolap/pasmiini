@@ -23,8 +23,7 @@ const Services = ({ meta, hero, archive, items, highlight }) => {
     <>
       <Meta meta={meta} />
       <section id="services-archive">
-        <Hero hero={hero} />
-        <Waves currentColor={archive.backgroundColor} />
+        <Hero hero={hero} currentColor={archive.backgroundColor} />
         <div className={styles.items}>
           {archive.title && (
             <header className={styles.header}>

@@ -44,8 +44,7 @@ const Index = ({
       <Meta meta={meta} />
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <section id="home">
-        <Hero hero={hero} />
-        <Waves currentColor={mediaMix.backgroundColor} />
+        <Hero hero={hero} currentColor={mediaMix.backgroundColor} />
         <MediaMix mediaMix={mediaMix} />
         <Waves rotated currentColor={mediaMix.backgroundColor} />
         <Waves currentColor={services.backgroundColor} />

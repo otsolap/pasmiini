@@ -3,6 +3,11 @@
 @import "../partials/breakpoints";
 @import "../partials/util";
 
+.heroWrapper {
+  max-width: 100%;
+  position: relative;
+}
+
 .hero {
   @extend .container;
   position: relative;
@@ -70,6 +75,14 @@
 @media (width >= $container-desktop) {
   .hero {
     @include flex-direction(row);
+    position: relative;
+  }
+
+  .waveContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   .mediaContainer,
@@ -96,12 +109,11 @@
     position: absolute;
     max-width: 1440px;
     inset: 0;
-    
+
     .video {
       height: 612px;
       max-height: 612px;
     }
-  
   }
 
   .mediaFirst,
@@ -115,7 +127,9 @@
   }
 
   .content {
-    padding: $triple;
+    padding: initial;
+    padding-right: $single;
+    min-height: 625px;
 
     h1 {
       padding-bottom: $double;
@@ -126,7 +140,6 @@
       font-size: 1.5rem;
       padding-bottom: $double;
     }
-
   }
 
   .shift {

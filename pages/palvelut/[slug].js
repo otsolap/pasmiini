@@ -26,8 +26,7 @@ const Service = ({
     <>
       <Meta meta={meta} />
       <section id="services">
-        <Hero hero={hero} />
-        <Waves currentColor={textarea.backgroundColor} />
+        <Hero hero={hero} currentColor={textarea.backgroundColor} />
         <Textarea textarea={textarea} />
         <Cards cards={cards} />
         <Waves rotated currentColor={cards.backgroundColor} />
