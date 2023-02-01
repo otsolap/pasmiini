@@ -1,6 +1,6 @@
 backend:
-  name: test-repo
-  branch: main
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 site_url: https://pasmiini.netlify.app/
 publish_mode: editorial_workflow
@@ -11,7 +11,7 @@ slug:
   sanitize_replacement: "_"
 # Uncomment local_backend when you need to develop in your local
 # npx netlify-cms-proxy-server
-local_backend: true
+local_backend: false
 collections:
   - name: "pages"
     description: "Sivujen asetukset."
