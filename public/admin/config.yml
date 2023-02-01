@@ -2,7 +2,8 @@ backend:
   name: test-repo
   branch: main
 media_folder: "public/images"
-site_url: https://luxury-crisp-4c6313.netlify.app
+site_url: https://pasmiini.netlify.app/
+publish_mode: editorial_workflow
 public_folder: /images
 slug:
   encoding: "ascii"
