@@ -746,6 +746,8 @@ collections:
     format: "json"
     create: true
     slug: "{{field.slug}}"
+    editor:
+     preview: false
     fields:
       - label: "Palvelun nimi"
         name: "title"
@@ -1425,6 +1427,8 @@ collections:
     extension: "json"
     format: "json"
     slug: "{{fields.slug}}"
+    editor:
+     preview: false
     fields:
       - label: "Kirjoittaja"
         name: "author"
@@ -1459,6 +1463,8 @@ collections:
     extension: "json"
     format: "json"
     slug: "{{slug}}"
+    editor:
+     preview: false
     fields:
       - {
           label: "Kysymyksen ID",
@@ -1485,6 +1491,8 @@ collections:
     extension: "json"
     format: "json"
     slug: "{{slug}}"
+    editor:
+     preview: false
     fields:
       - {
           label: "Nimi",
@@ -1520,6 +1528,8 @@ collections:
 
   - label: "Yleiset asetukset"
     name: "site"
+    editor:
+     preview: false
     files:
       - label: "Staattinen sisältö"
         name: "site"

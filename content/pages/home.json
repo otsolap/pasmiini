@@ -21,7 +21,7 @@
       {
         "type": "image",
         "image": "/images/Karusellikuva_02.png",
-        "mediaWidth": false,
+        "mediaWidth": true,
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
         "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen.  Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.",
         "buttons": [
