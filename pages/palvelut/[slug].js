@@ -30,27 +30,39 @@ const Service = ({
         <Textarea textarea={textarea} />
         <Cards cards={cards} />
         <Waves rotated currentColor={cards.backgroundColor} />
-        <MediaMix mediaMix={mediaMix} />
+        <MediaMix mediaMix={mediaMix} currentColor={mediaMix.backgroundColor} />
         <Waves currentColor={mediaMix_2.backgroundColor} />
-        <MediaMix mediaMix={mediaMix_2} />
+        <MediaMix
+          mediaMix={mediaMix_2}
+          currentColor={mediaMix_2.backgroundColor}
+        />
         <Waves
           rotated
           currentColor={mediaMix_2.backgroundColor}
           siblingColor={mediaMix_3.backgroundColor}
         />
-        <MediaMix mediaMix={mediaMix_3} />
+        <MediaMix
+          mediaMix={mediaMix_3}
+          currentColor={mediaMix_3.backgroundColor}
+        />
         <Waves
           rotated
           currentColor={mediaMix_3.backgroundColor}
           siblingColor={mediaMix_4.backgroundColor}
         />
-        <MediaMix mediaMix={mediaMix_4} />
+        <MediaMix
+          mediaMix={mediaMix_4}
+          currentColor={mediaMix_4.backgroundColor}
+        />
         <Waves
           rotated
           currentColor={mediaMix_4.backgroundColor}
           siblingColor={mediaMix_5.backgroundColor}
         />
-        <MediaMix mediaMix={mediaMix_5} />
+        <MediaMix
+          mediaMix={mediaMix_5}
+          currentColor={mediaMix_5.backgroundColor}
+        />
         <Waves rotated currentColor={mediaMix_5.backgroundColor} />
         <Accordion accordion={accordion} />
         <Textarea textarea={textarea_2} />

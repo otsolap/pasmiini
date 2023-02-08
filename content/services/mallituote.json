@@ -41,6 +41,7 @@
     "backgroundColor": "green",
     "items": [
       {
+        "mediaWidth": true,
         "type": "image",
         "image": "/images/Karusellikuva_03.png",
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
@@ -80,6 +81,7 @@
     "backgroundColor": "blue",
     "items": [
       {
+        "mediaWidth": true,
         "type": "image",
         "image": "/images/logo.svg",
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
@@ -123,6 +125,7 @@
     "backgroundColor": "pink",
     "items": [
       {
+        "mediaWidth": true,
         "type": "image",
         "image": "/images/Karusellikuva_04.png",
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
@@ -137,8 +140,7 @@
             "title": "Uudet nettisivut 2",
             "url": "/linkki"
           }
-        ],
-        "mediaWidth": false
+        ]
       },
       {
         "type": "markdown",
@@ -210,7 +212,6 @@
     ],
     "backgroundColor": "blue"
   },
-  "title": "Mallituote",
   "mediaMix": {
     "backgroundColor": "creamyWhite",
     "items": [

@@ -55,6 +55,23 @@
   width: fit-content;
 }
 
+.wavesTop,
+.wavesBottom {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+}
+
+.wavesTop {
+  top: 0;
+  left: 0;
+}
+
+.wavesBottom {
+  bottom: 0;
+  left: 0;
+}
+
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
   .wrapper {
@@ -82,5 +99,4 @@
     margin-left: initial;
     margin-right: initial;
   }
-
 }

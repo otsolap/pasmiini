@@ -1,10 +1,12 @@
 import styles from "@/styles/components/mediaMix.module.scss";
 import MediaMixItem from "@/partials/MediaMixItem";
+import Waves from "partials/Waves";
 
-const MediaMix = ({ mediaMix }) => {
+const MediaMix = ({ mediaMix, currentColor }) => {
   return (
     <div className={`bg-${mediaMix.backgroundColor} `}>
       <section className={styles.mediaMix}>
+        <Waves currentColor={currentColor} className={styles.wavesTop} />
         <div className={styles.wrapper}>
           {mediaMix.items.map((item, i) => {
             return (
@@ -20,6 +22,11 @@ const MediaMix = ({ mediaMix }) => {
             );
           })}
         </div>
+        <Waves
+          rotated
+          currentColor={currentColor}
+          className={styles.wavesBottom}
+        />
       </section>
     </div>
   );
