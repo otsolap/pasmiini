@@ -9,25 +9,28 @@ import home from "@/content/pages/home.json";
 import styles from "@/styles/components/header.module.scss";
 
 const Header = () => {
-  const [background, toggle] = useToggle(false);
+  const [transparentBackground, toggle] = useToggle(true);
   const router = useRouter();
   const { brand, navigation } = nav;
   const { calender } = site;
   const { mediaWidth, media } = home.hero;
 
   const toggleBackground = () => {
-    if (mediaWidth !== true || media !== "image" || router.pathname !== "/")
+    if (mediaWidth !== true || media !== "image" || router.pathname !== "/") {
       return;
+    }
 
-    if (window.scrollY > 100) {
-      toggle(false);
-    } else {
-      toggle(true);
+    if (window.scrollY < 100) {
+      return toggle(true);
+    } else if (window.scrollY > 100) {
+      return toggle(false);
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", toggleBackground);
+
+    return () => window.removeEventListener("scroll", toggleBackground);
   }, []);
 
   const pages = navigation.pages.map((page, i) => {
@@ -80,7 +83,7 @@ const Header = () => {
         className={`
       desktop-only 
       ${styles.primaryMenu}
-      ${background == true ? styles.transparent : styles.colorful}
+      ${transparentBackground == true ? styles.transparent : styles.colorful}
       `}
       >
         <ul className={styles.wrapper}>

@@ -5,9 +5,9 @@
     "align": "left",
     "media": "image",
     "image": "/images/Karusellikuva_02.png",
-    "mediaWidth": false,
-    "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
-    "autoplay": true,
+    "mediaWidth": true,
+    "video": "https://www.youtube.com/watch?v=qEVUtrk8_B4",
+    "autoplay": false,
     "buttons": [
       {
         "title": "Tutustu ohjelmiin",

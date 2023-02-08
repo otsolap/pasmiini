@@ -146,8 +146,17 @@
     z-index: 1;
     margin-top: -$quintuple;
 
+    .contentContainer {
+      padding-left: $single;
+    }
+
     .content {
       padding-top: $quintuple;
+      min-height: 725px;
     }
+  }
+
+  .shift + .waveContainer {
+    z-index: 2;
   }
 }
