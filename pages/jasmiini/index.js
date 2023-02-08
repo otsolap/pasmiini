@@ -17,7 +17,7 @@ const About = ({
   return (
     <>
       <Meta meta={meta} />
-      <MediaMix mediaMix={mediaMix} />
+      <MediaMix currentColor={mediaMix.backgroundColor} mediaMix={mediaMix} />
       <Waves rotated currentColor={mediaMix.backgroundColor} />
       <Textarea textarea={textarea} />
       <Waves currentColor={cards.backgroundColor} />
@@ -27,10 +27,10 @@ const About = ({
       <Waves currentColor={highlight.backgroundColor} />
       <Highlight highlight={highlight} />
       <Waves
-          rotated
-          currentColor={highlight.backgroundColor}
-          siblingColor={"green"}
-        />
+        rotated
+        currentColor={highlight.backgroundColor}
+        siblingColor={"green"}
+      />
     </>
   );
 };

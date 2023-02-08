@@ -40,8 +40,19 @@
   width: 325px;
 }
 
+.videoContainer,
+.circle {
+  z-index: 30;
+}
+
 .circle {
   @include border-radius(100%);
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .buttonWrapper {
@@ -63,7 +74,7 @@
 }
 
 .wavesTop {
-  top: 0;
+  top: -2px;
   left: 0;
 }
 

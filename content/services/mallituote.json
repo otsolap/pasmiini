@@ -81,7 +81,7 @@
     "backgroundColor": "blue",
     "items": [
       {
-        "mediaWidth": true,
+        "mediaWidth": false,
         "type": "image",
         "image": "/images/logo.svg",
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
@@ -125,7 +125,7 @@
     "backgroundColor": "pink",
     "items": [
       {
-        "mediaWidth": true,
+        "mediaWidth": false,
         "type": "image",
         "image": "/images/Karusellikuva_04.png",
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",

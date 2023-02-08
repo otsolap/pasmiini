@@ -7,9 +7,9 @@ const MediaMix = ({ mediaMix, currentColor }) => {
     <div className={`bg-${mediaMix.backgroundColor} `}>
       <section className={styles.mediaMix}>
         <Waves
+          className={styles.wavesTop}
           rotated
           currentColor={currentColor}
-          className={styles.wavesTop}
         />
         <div className={styles.wrapper}>
           {mediaMix.items.map((item, i) => {
@@ -26,7 +26,7 @@ const MediaMix = ({ mediaMix, currentColor }) => {
             );
           })}
         </div>
-        <Waves currentColor={currentColor} className={styles.wavesBottom} />
+        <Waves className={styles.wavesBottom} currentColor={currentColor} />
       </section>
     </div>
   );
