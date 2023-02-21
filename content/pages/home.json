@@ -155,9 +155,9 @@
     "mediaWidth": true,
     "autoplay": false,
     "media": "image",
-    "align": "left",
+    "align": "right",
     "summary": "Tämä on Heron alaotsikko. Herolohko antaa sinulle vaihtoehdon täyttää koko lohkon kuvalla, tai jakaa kuvan 50% tekstikentän kanssa. Kuvan sijainninkin voit muuttaa. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta. Kuvan sijaan myös mahdollista liittää video youtube-linkin muodossa.",
-    "title": "Hero-Otsikko max 50 kirjainta pitkä.",
+    "title": "Haluatko ovimatosta oman elämäsi ohjaajaksi?",
     "video": "https://www.youtube.com/watch?v=qEVUtrk8_B4",
     "image": "/images/nimeto_n_suunn.malli.png"
   },
