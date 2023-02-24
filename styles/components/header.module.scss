@@ -57,8 +57,8 @@
 
   .topMenu {
     gap: 100px;
-    padding: $single;
     border-color: $creamyWhite;
+    padding: $single $single 0rem 0rem;
     width: 100%;
   }
 
@@ -102,7 +102,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: $double;
-    padding: $single;
+    padding: 0 $single;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;

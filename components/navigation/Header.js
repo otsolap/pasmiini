@@ -30,7 +30,7 @@ const Header = () => {
     } else if (window.scrollY > 100) {
       return toggle(false);
     }
-  }, [mediaWidth, media, router.pathname, toggle]);
+  }, [boolean, toggle]);
 
   useEffect(() => {
     window.addEventListener("scroll", toggleBackground);
