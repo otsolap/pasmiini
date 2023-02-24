@@ -12,7 +12,7 @@ const Header = () => {
   const router = useRouter();
   // this variable is for index page's hero and navbar
   // we only want this for the index page.
-  let boolean
+  let boolean = false;
   if (mediaWidth == true && media == "image" && router.pathname == "/") {
     boolean = true;
   }
@@ -30,7 +30,7 @@ const Header = () => {
     } else if (window.scrollY > 100) {
       return toggle(false);
     }
-  }, [boolean, toggle]);
+  }, [boolean, router.pathname, toggle]);
 
   useEffect(() => {
     window.addEventListener("scroll", toggleBackground);
