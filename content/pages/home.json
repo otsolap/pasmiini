@@ -152,7 +152,7 @@
         "url": "/palvelut"
       }
     ],
-    "mediaWidth": false,
+    "mediaWidth": true,
     "autoplay": false,
     "media": "image",
     "align": "right",
