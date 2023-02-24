@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import useToggle from "@/hooks/useToggleState";
+import React, { useCallback, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -9,14 +8,20 @@ import home from "@/content/pages/home.json";
 import styles from "@/styles/components/header.module.scss";
 
 const Header = () => {
-  const [transparentBackground, toggle] = useToggle(true);
+  const { mediaWidth, media } = home.hero;
   const router = useRouter();
+  // this variable is for index page's hero and navbar
+  // we only want this for the index page.
+  let boolean
+  if (mediaWidth == true && media == "image" && router.pathname == "/") {
+    boolean = true;
+  }
+  const [transparentBackground, toggle] = useState(boolean)
   const { brand, navigation } = nav;
   const { calender } = site;
-  const { mediaWidth, media } = home.hero;
 
-  const toggleBackground = () => {
-    if (mediaWidth !== true || media !== "image" || router.pathname !== "/") {
+  const toggleBackground = useCallback(() => {
+    if (boolean == false || boolean == null || boolean == undefined) {
       return;
     }
 
@@ -25,13 +30,13 @@ const Header = () => {
     } else if (window.scrollY > 100) {
       return toggle(false);
     }
-  };
+  }, [mediaWidth, media, router.pathname, toggle]);
 
   useEffect(() => {
     window.addEventListener("scroll", toggleBackground);
 
     return () => window.removeEventListener("scroll", toggleBackground);
-  }, []);
+  }, [toggleBackground]);
 
   const pages = navigation.pages.map((page, i) => {
     return (
@@ -83,7 +88,7 @@ const Header = () => {
         className={`
       desktop-only 
       ${styles.primaryMenu}
-      ${transparentBackground == true ? styles.transparent : styles.colorful}
+      ${transparentBackground == true ? '' : styles.active}
       `}
       >
         <ul className={styles.wrapper}>
