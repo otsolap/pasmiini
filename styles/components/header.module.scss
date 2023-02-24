@@ -80,20 +80,21 @@
     position: sticky;
     z-index: 50;
     top: 0;
-  }
-
-  .primaryMenu.transparent {
     background-color: transparent;
 
     .link {
       color: $yellow;
     }
-
   }
 
-  .primaryMenu.colorful {
+  .primaryMenu.active {
     background-color: $green;
+
+    .link {
+       color: $creamyWhite;
+    }
   }
+
 
   .wrapper {
     @include display-flex;
@@ -114,7 +115,6 @@
   }
 
   .link {
-    color: $creamyWhite;
     font-size: $double;
 
     &:focus,
