@@ -12,11 +12,13 @@ import "swiper/scss/effect-coverflow";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
   return (
     <Layout>
-      <Header />
+      <Header key={router.asPath}  />
       <Component {...pageProps} />
       <Footer />
       <MobileFooter />
