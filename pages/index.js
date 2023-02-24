@@ -37,7 +37,7 @@ const Index = ({
         }
       });
     }
-  }, []);
+  }, [router]);
 
   return (
     <>
