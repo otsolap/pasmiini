@@ -8,7 +8,7 @@ const Highlight = ({ highlight }) => {
     <div className={`bg-${highlight.backgroundColor}`}>
       <section className={styles.highlight}>
         {highlight.image && (
-          <figue className={styles.imageContainer}>
+          <figure className={styles.imageContainer}>
             <Image
               className={styles.image}
               src={highlight.image}
@@ -18,7 +18,7 @@ const Highlight = ({ highlight }) => {
               quality={100}
               sizes="33vw"
             />
-          </figue>
+          </figure>
         )}
         <div className={styles.content}>
           {highlight.title && (
