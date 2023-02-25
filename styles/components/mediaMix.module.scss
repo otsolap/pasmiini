@@ -25,7 +25,11 @@
   padding-bottom: $half;
 }
 
-.markdown,
+.markdown {
+  padding-left: $single;
+  padding-right: $single;
+}
+
 .imageContainer,
 .circleContainer,
 .videoContainer {
@@ -56,8 +60,7 @@
 }
 
 .buttonWrapper {
-  padding-top: $single;
-  padding-bottom: $double;
+  padding: 0 $single;
   margin-left: auto;
   margin-right: auto;
 }

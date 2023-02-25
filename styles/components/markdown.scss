@@ -45,6 +45,9 @@
 
     a {
       color: $blue;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      word-break: break-word;
 
       &::after {
         content: url("/icons/circle-arrow-blue.svg");

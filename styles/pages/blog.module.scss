@@ -40,8 +40,10 @@
   padding: $single;
 }
 
+
 /* DESKTOP STYLES */
 @media (width >= $container-desktop) {
+  
   .articleLayout {
     padding-bottom: $double;
     padding-top: initial;
