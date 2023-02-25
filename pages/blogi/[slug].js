@@ -50,7 +50,7 @@ const Slug = ({
         </div>
       </div>
       <Waves currentColor={mediaMix.backgroundColor} siblingColor={"green"} />
-      <MediaMix mediaMix={mediaMix} />
+      <MediaMix currentColor={mediaMix.backgroundColor} mediaMix={mediaMix} />
       <Waves currentColor={cards.backgroundColor} />
       <Cards cards={cards} />
       <Waves rotated currentColor={cards.backgroundColor} />
