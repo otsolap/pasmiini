@@ -24,7 +24,7 @@ const BlogItem = ({ image, title, slug }) => {
             alt=""
             fill
             quality={100}
-            sizes="(max-width: 1024x) 100vw,
+            sizes="(max-width: 1024px) 100vw,
             33vw"
           />
         ) : (
@@ -34,7 +34,7 @@ const BlogItem = ({ image, title, slug }) => {
             alt={site.placeholder.title}
             fill
             quality={100}
-            sizes="(max-width: 1024x) 100vw,
+            sizes="(max-width: 1024px) 100vw,
             33vw"
           />
         )}

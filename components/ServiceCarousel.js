@@ -61,7 +61,7 @@ const ServiceCarousel = ({ content }) => {
                         src={item.image}
                         alt={item.title}
                         fill
-                        sizes="(max-width: 1024x) 100vw, 33vw"
+                        sizes="(max-width: 1024px) 100vw, 33vw"
                       />
                     </figure>
                   )}

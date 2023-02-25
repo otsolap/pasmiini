@@ -20,7 +20,7 @@ const FooterColumnContact = ({  open, title, list }) => {
 
     return (
         <div className={styles.column}>
-            <button className={styles.button} onClick={toggleAccordion}>
+            <div className={styles.button} onClick={toggleAccordion}>
                 <div className={styles.wrapper}>
                     <div className={active ? `${styles.open}` : `${styles.closed}`}>
                         <div className={styles.flexBox}>
@@ -34,7 +34,7 @@ const FooterColumnContact = ({  open, title, list }) => {
                         <ContactDetails list={list} />
                     </div>
                 </div>
-            </button>
+            </div>
         </div>
     )
 }

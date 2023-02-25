@@ -57,7 +57,7 @@ const Header = () => {
     <>
       <nav className={styles.header}>
         <header className={styles.topMenuWrapper}>
-          <ul className={`container ${styles.topMenu}`}>
+          <div className={`container ${styles.topMenu}`}>
             {brand.logo && (
               <figure className={styles.logo}>
                 <Link passHref className={styles.brandLink} href={"/"}>
@@ -81,7 +81,7 @@ const Header = () => {
                 {calender.title}
               </Link>
             )}
-          </ul>
+          </div>
         </header>
       </nav>
       <nav

@@ -5,7 +5,7 @@ import Waves from "partials/Waves";
 const MediaMix = ({ mediaMix, currentColor }) => {
   return (
     <div className={`bg-${mediaMix.backgroundColor} `}>
-      <section className={styles.mediaMix}>
+      <div className={styles.mediaMix}>
         <Waves
           className={styles.wavesTop}
           rotated
@@ -27,7 +27,7 @@ const MediaMix = ({ mediaMix, currentColor }) => {
           })}
         </div>
         <Waves className={styles.wavesBottom} currentColor={currentColor} />
-      </section>
+      </div>
     </div>
   );
 };
