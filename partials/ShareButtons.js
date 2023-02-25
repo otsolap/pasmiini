@@ -26,9 +26,7 @@ const ShareButtons = ({ description }) => {
       <strong>Jaa blogi:</strong>
       <footer className={styles.shareButtons}>
         <Link
-          href={`mailto:?&subject=${description}!&cc=&bcc=&body=${url}\n${encodeURI(
-            description
-          )}`}
+          href={`mailto:?&subject=${description}!&cc=&bcc=&body=${url}\n${encodeURI(description)}`}
           target="_blank"
           rel="noopener noreferrer"
           passHref
@@ -40,7 +38,7 @@ const ShareButtons = ({ description }) => {
           />
         </Link>
         <Link
-          href={`whatsapp://send?text=${description} - ${url}`}
+          href={`whatsapp://send?text=${description}-${url}`}
           data-action="share/whatsapp/share"
           target="_blank"
           rel="noopener noreferrer"

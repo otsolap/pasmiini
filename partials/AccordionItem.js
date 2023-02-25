@@ -17,7 +17,7 @@ const AccordionItem = ({ title, body, open }) => {
   };
 
   return (
-    <button className={styles.button} onClick={toggleAccordion}>
+    <div className={styles.button} onClick={toggleAccordion}>
       <div className={styles.item}>
         <div className={styles.flexBox}>
           <h4 className={styles.heading}>{title}</h4>
@@ -36,7 +36,7 @@ const AccordionItem = ({ title, body, open }) => {
           <p className={styles.text}>{body}</p>
         </div>
       </div>
-    </button>
+    </div>
   );
 };
 

@@ -94,9 +94,11 @@ const Header = () => {
         <ul className={styles.wrapper}>
           {pages}
           {calender && (
-            <Link className={`active ${styles.calender}`} href={calender.url}>
-              {calender.title}
-            </Link>
+            <li className={styles.calender}>
+              <Link className="active" href={calender.url}>
+                {calender.title}
+              </Link>
+            </li>
           )}
         </ul>
       </nav>

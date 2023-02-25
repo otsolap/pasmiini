@@ -24,7 +24,7 @@ const FooterColumnCompany = ({ open, title, body }) => {
 
   return (
     <div className={styles.column}>
-      <div className={styles.button} onClick={toggleAccordion}>
+      <div role="button" className={styles.button} onClick={toggleAccordion}>
         <div className={styles.wrapper}>
           <div className={active ? `${styles.open}` : `${styles.closed}`}>
             <div className={styles.flexBox}>
