@@ -76,6 +76,7 @@
 
   .primaryMenu {
     border-bottom: 1px solid;
+    border-color: transparent;
     width: 100%;
     position: sticky;
     z-index: 50;
@@ -89,6 +90,8 @@
 
   .primaryMenu.active {
     background-color: $green;
+    border-color: $green;
+    
 
     .link {
        color: $creamyWhite;
