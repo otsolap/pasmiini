@@ -1,7 +1,7 @@
 import styles from "@/styles/components/cards.module.scss";
 import Image from "next/image";
 
-const MediaMixItem = ({ image, title, summary, className }) => {
+const CardItem = ({ image, title, summary, className }) => {
   return (
     <article className={`${styles.card} ${className ? className : null}`}>
       {image && (
@@ -23,4 +23,4 @@ const MediaMixItem = ({ image, title, summary, className }) => {
   );
 };
 
-export default MediaMixItem;
+export default CardItem;
