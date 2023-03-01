@@ -1,6 +1,4 @@
 {
-  "title": "Esimerkkituote Jasmiinille",
-  "slug": "mallituote",
   "cards": {
     "title": "Kortit-osion tekstisisältö",
     "summary": "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen.",
@@ -77,6 +75,7 @@
       }
     ]
   },
+  "slug": "mallituote",
   "mediaMix_3": {
     "backgroundColor": "blue",
     "items": [
@@ -212,6 +211,7 @@
     ],
     "backgroundColor": "blue"
   },
+  "title": "Esimerkkituote Jasmiinille",
   "mediaMix": {
     "backgroundColor": "creamyWhite",
     "items": [
@@ -255,8 +255,8 @@
     "summary": "Tämä on Heron alaotsikko. Herolohko antaa sinulle vaihtoehdon täyttää koko lohkon kuvalla, tai jakaa kuvan 50% tekstikentän kanssa. Kuvan sijainninkin voit muuttaa. Lohkon päätyyn pystyt lisäämään maksimissaan 2 toimintakehotetta. Kuvan sijaan myös mahdollista liittää video youtube-linkin muodossa.",
     "align": "left",
     "media": "video",
-    "image": "/images/logo.svg",
-    "mediaWidth": false,
+    "image": "/images/nimeto_n_suunn.malli.png",
+    "mediaWidth": true,
     "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
     "buttons": [
       {
