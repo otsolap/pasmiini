@@ -1412,11 +1412,11 @@ collections:
      preview: false
     fields:
       - {
-          label: "Kysymyksen ID",
+          label: "Kysymyksen tunniste",
           name: "id",
           widget: "string",
           required: true,
-          hint: "Määrittele uniikki ID kysymykselle. Esim: b2b-rahanpalautus",
+          hint: "Määrittele uniikki tunniste kysymykselle. Esim: b2b-rahanpalautus",
         }
       - { label: "Kysymys", name: "title", widget: "string", required: true }
       - { label: "Vastaus", name: "body", widget: "text", required: true }
@@ -1480,7 +1480,7 @@ collections:
         name: "site"
         file: "content/settings/site.json"
         fields:
-          - label: "Nosto"
+          - label: "Alatunniteen Nosto"
             hint: "Nostolohko, johon voit kirjoittaa ytimekkään otsikon sekä mahdollisuuden lisätä rikasta tekstisisältöä, sekä toimintakehotteen. Nostolohkon saa taustaväriltään joko sinisenä tai tummanvihreänä. Teksti on normaalisti kermanvalkoinen, mutta lihavoinnilla saat siihen keltaisen korostuksen. Voit myös laittaa pienen kuvan tekstin yläpuolelle, kuten esimerkiksi logosi."
             name: "highlight"
             widget: object
@@ -1535,7 +1535,7 @@ collections:
                   - { label: "Pinkki", value: "pink" }
                   - { label: "Keltainen", value: "yellow" }
 
-          - label: "Kortit"
+          - label: "Kortit | Minusta & Yksittäinen blogi-artikkeli sivut"
             name: "cards"
             hint: "Yksittäiseen korttiin voit lisätä kuvan, logon tai ikonin. Kortteja saa olla maksimissaan 6 kappaletta. Teksti ja kuva eivät ole pakollisia. Voit halutessasi myös lisätä osioon otsikon sekä kuvauksen, joka näkyy korttien yläpuolella. Ideana on, että on hyvä ohjeistaa lukijaa mitä korteilla tarkalleen haluat kertoa. Toisinaan se ei kuitenkaan ole tarpeellista. Nämä kyseiset kortit näkyvät 'Minusta'- ja 'Blogi'-sivuissa."
             collapsed: true
