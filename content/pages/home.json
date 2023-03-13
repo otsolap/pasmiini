@@ -40,7 +40,7 @@
     "title": "Blogi-lohkon Tekstisisältö",
     "summary": "Blogi-lohkossa esitetään blogin kuva, otsikko sekä toimintakehote lukemaan kyseinen artikkeli. Jos sattumoisin sinulle ei ole kuvaa blogia varten. Ladataan sen tilalle logosi. Tätä en kuitenkaan missään tapauksessa suosittele.",
     "backgroundColor": "creamyWhite",
-    "filter": "custom",
+    "filter": "latest",
     "blog": [
       "istumatyolainen-vasyttaako",
       "syomishairio"
