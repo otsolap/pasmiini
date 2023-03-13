@@ -103,7 +103,7 @@ collections:
                       required: false,
                     }
           - label: "MediaMix"
-            hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikentän alle voit lisätä korostetun listan, jossa sovelletaan tšekkimerkkejä ja tekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."
+            hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Voit halutessasi korostaa listan, jolloin normaaleista * ikoneista tulee tšekkimerkkejä. Tsekkimerkkien listatekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."            
             name: "mediaMix"
             collapsed: true
             widget: object
@@ -165,11 +165,10 @@ collections:
                       hint: "Muista valita mediakentästä kuvakenttä.",
                     }
                   - {
-                      label: "Täyttääkö kuva koko ruudun?",
+                      label: "Valtaavatko aallot kuvan?",
                       name: "mediaWidth",
                       widget: "boolean",
                       required: false,
-                      hint: "Kuva kokoruudun kokoiseksi",
                     }
                   - {
                       label: "Video",
@@ -212,7 +211,7 @@ collections:
                 min: 3
                 fields:
                   - label: "Media"
-                    name: "media"
+                    name: "type"
                     widget: "select"
                     required: false
                     options:
@@ -302,61 +301,6 @@ collections:
                 search_fields: ["title"]
                 value_field: "{{slug}}"
                 display_fields: ["title"]
-
-          - label: "Nosto"
-            hint: "Nostolohko, johon voit kirjoittaa ytimekkään otsikon sekä mahdollisuuden lisätä rikasta tekstisisältöä, sekä toimintakehotteen. Nostolohkon saa taustaväriltään joko sinisenä tai tummanvihreänä. Teksti on normaalisti kermanvalkoinen, mutta lihavoinnilla saat siihen keltaisen korostuksen. Voit myös laittaa pienen kuvan tekstin yläpuolelle, kuten esimerkiksi logosi."
-            name: "highlight"
-            widget: object
-            collapsed: true
-            fields:
-              - {
-                  label: "Otsikko",
-                  name: "title",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Kuvaus",
-                  name: "body",
-                  widget: "markdown",
-                  required: false,
-                }
-              - {
-                  label: "Kuva",
-                  name: "image",
-                  widget: "image",
-                  required: false,
-                  hint: "Näytetään tekstin yläpuolella",
-                }
-              - label: "Toimintakehoite"
-                name: "button"
-                max: 1
-                allow_add: false
-                required: false
-                widget: list
-                fields:
-                  - {
-                      label: "Otsikko",
-                      name: "title",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "Linkki",
-                      name: "url",
-                      widget: "string",
-                      required: false,
-                    }
-              - label: "Taustaväri"
-                name: "backgroundColor"
-                required: false
-                widget: "select"
-                options:
-                  - { label: "Tummanvihreä", value: "green" }
-                  - { label: "Turkoosi", value: "blue" }
-                  - { label: "Kermanvalkoinen", value: "creamyWhite" }
-                  - { label: "Pinkki", value: "pink" }
-                  - { label: "Keltainen", value: "yellow" }
 
           - label: "Tekstikenttä"
             hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
@@ -907,7 +851,7 @@ collections:
                 }
 
       - label: "MediaMix"
-        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikentän alle voit lisätä korostetun listan, jossa sovelletaan tšekkimerkkejä ja tekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."
+        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Voit halutessasi korostaa listan, jolloin normaaleista * ikoneista tulee tšekkimerkkejä. Tsekkimerkkien listatekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."        
         name: "mediaMix"
         collapsed: true
         widget: object
@@ -969,11 +913,10 @@ collections:
                   hint: "Muista valita mediakentästä kuvakenttä.",
                 }
               - {
-                  label: "Täyttääkö kuva koko ruudun?",
+                  label: "Valtaavatko aallot kuvan?",
                   name: "mediaWidth",
                   widget: "boolean",
                   required: false,
-                  hint: "Kuva kokoruudun kokoiseksi",
                 }
               - {
                   label: "Video",
@@ -984,7 +927,7 @@ collections:
                 }
 
       - label: "MediaMix"
-        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikentän alle voit lisätä korostetun listan, jossa sovelletaan tšekkimerkkejä ja tekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."
+        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Voit halutessasi korostaa listan, jolloin normaaleista * ikoneista tulee tšekkimerkkejä. Tsekkimerkkien listatekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."        
         name: "mediaMix_2"
         collapsed: true
         widget: object
@@ -1046,11 +989,10 @@ collections:
                   hint: "Muista valita mediakentästä kuvakenttä.",
                 }
               - {
-                  label: "Täyttääkö kuva koko ruudun?",
+                  label: "Valtaavatko aallot kuvan?",
                   name: "mediaWidth",
                   widget: "boolean",
                   required: false,
-                  hint: "Kuva kokoruudun kokoiseksi",
                 }
               - {
                   label: "Video",
@@ -1061,7 +1003,7 @@ collections:
                 }
 
       - label: "MediaMix"
-        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikentän alle voit lisätä korostetun listan, jossa sovelletaan tšekkimerkkejä ja tekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."
+        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Voit halutessasi korostaa listan, jolloin normaaleista * ikoneista tulee tšekkimerkkejä. Tsekkimerkkien listatekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."        
         name: "mediaMix_3"
         collapsed: true
         widget: object
@@ -1123,11 +1065,10 @@ collections:
                   hint: "Muista valita mediakentästä kuvakenttä.",
                 }
               - {
-                  label: "Täyttääkö kuva koko ruudun?",
+                  label: "Valtaavatko aallot kuvan?",
                   name: "mediaWidth",
                   widget: "boolean",
                   required: false,
-                  hint: "Kuva kokoruudun kokoiseksi",
                 }
               - {
                   label: "Video",
@@ -1138,7 +1079,7 @@ collections:
                 }
 
       - label: "MediaMix"
-        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikentän alle voit lisätä korostetun listan, jossa sovelletaan tšekkimerkkejä ja tekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."
+        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Voit halutessasi korostaa listan, jolloin normaaleista * ikoneista tulee tšekkimerkkejä. Tsekkimerkkien listatekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."        
         name: "mediaMix_4"
         collapsed: true
         widget: object
@@ -1200,11 +1141,10 @@ collections:
                   hint: "Muista valita mediakentästä kuvakenttä.",
                 }
               - {
-                  label: "Täyttääkö kuva koko ruudun?",
+                  label: "Valtaavatko aallot kuvan?",
                   name: "mediaWidth",
                   widget: "boolean",
                   required: false,
-                  hint: "Kuva kokoruudun kokoiseksi",
                 }
               - {
                   label: "Video",
@@ -1215,7 +1155,7 @@ collections:
                 }
 
       - label: "MediaMix"
-        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Tekstikentän alle voit lisätä korostetun listan, jossa sovelletaan tšekkimerkkejä ja tekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."
+        hint: "Saat kaksi vierekkäistä saraketta, joihin saat päättää sisältötyypin: Teksti-, kuva tai videosisältöä. Kuvat esitetään aina palloon kehystettynä. Tekstikenttään pystyy kirjoittamaan rikasta tekstisisältöä, kuten mm. Otsikoita, lihavoitua tekstiä, kursivoitua tekstiä, listoja, numerollisia listoja, linkkejä, yms. Tekstikentän päätyyn voit lisätä maksimissaan 2 toimintakehotetta. Lista-elementit näytetään yleisillä * palloikoneilla. Linkin väri on normaalisti sinivihreä ja muuttuu keltaiseksi sekä saa alareunan, kun hiiren laittaa linkin ylle. Voit halutessasi korostaa listan, jolloin normaaleista * ikoneista tulee tšekkimerkkejä. Tsekkimerkkien listatekstin koko on normaalitekstiä suurempi sekä lihavoitu. MediaMixin saa valita brändimukaiset taustavärit: tummanvihreä, sininen, keltainen, kermanvalkoinen ja pinkki. Riippuen taustaväristä teksti on joko kermanvalkoinen tai tummanvihreä."        
         name: "mediaMix_5"
         collapsed: true
         widget: object
@@ -1277,11 +1217,10 @@ collections:
                   hint: "Muista valita mediakentästä kuvakenttä.",
                 }
               - {
-                  label: "Täyttääkö kuva koko ruudun?",
+                  label: "Valtaavatko aallot kuvan?",
                   name: "mediaWidth",
                   widget: "boolean",
                   required: false,
-                  hint: "Kuva kokoruudun kokoiseksi",
                 }
               - {
                   label: "Video",
