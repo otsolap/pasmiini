@@ -303,7 +303,7 @@ collections:
                 display_fields: ["title"]
 
           - label: "Tekstikenttä"
-            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementissä on yleiset *-pallerot, mutta lihavoimalla saat "Tsekki"-ikonin sekä suuremman fonttikoon. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
             name: "textarea"
             widget: object
             collapsed: true
@@ -358,7 +358,7 @@ collections:
         preview_path: jasmiini
         fields:
           - label: "Tekstikenttä"
-            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementissä on yleiset *-pallerot, mutta lihavoimalla saat "Tsekki"-ikonin sekä suuremman fonttikoon. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
             name: "textarea"
             widget: object
             collapsed: true
@@ -581,7 +581,7 @@ collections:
         preview_path: ajanvaraus
         fields:
           - label: "Tekstikenttä"
-            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementissä on yleiset *-pallerot, mutta lihavoimalla saat "Tsekki"-ikonin sekä suuremman fonttikoon. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
             name: "textarea"
             widget: object
             collapsed: true
@@ -638,7 +638,7 @@ collections:
         preview_path: treenit
         fields:
           - label: "Tekstikenttä"
-            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+            hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementissä on yleiset *-pallerot, mutta lihavoimalla saat "Tsekki"-ikonin sekä suuremman fonttikoon. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
             name: "textarea"
             widget: object
             collapsed: true
@@ -782,7 +782,7 @@ collections:
                 }
 
       - label: "Tekstikenttä"
-        hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+        hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementissä on yleiset *-pallerot, mutta lihavoimalla saat "Tsekki"-ikonin sekä suuremman fonttikoon. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
         name: "textarea"
         widget: object
         collapsed: true
@@ -1261,7 +1261,7 @@ collections:
             display_fields: ["title", "id"]
 
       - label: "Tekstikenttä"
-        hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementtien edessä on aina “Tsekki”-ikoni, eikä yleistä palleroa. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
+        hint: "Tekstikentän otsikon lihavointi antaa tekstille brändimukaisen värinsä. Tekstikenttään voit vapaasti kirjoittaa rikasta tekstisisältöä, jossa tekstiä voi lihavoida tai kursivoida. Pystyt lisäämään tekstiin linkkejä, kuin listoja. Lista-elementissä on yleiset *-pallerot, mutta lihavoimalla saat "Tsekki"-ikonin sekä suuremman fonttikoon. Vaihtoehtoisesti voit kirjoittaa numeraalisen listan. Tekstiin voit laittaa 5 eri kokoista otsikkoa. Tekstikentän saa taustaväriltään joko kermanvalkoisena tai tummanvihreänä. Tekstinä toimii sitten valinnan vastapuoli. Voit myös lihavoida tekstiä ja antaa sille keltaisen/sinisen korostuksen. (Keltainen tummanvihreällä, sininen kermanvalkoiselle)."
         name: "textarea_2"
         widget: object
         collapsed: true
