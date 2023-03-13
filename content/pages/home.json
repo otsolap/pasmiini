@@ -40,7 +40,7 @@
     "title": "Blogi-lohkon Tekstisisältö",
     "summary": "Blogi-lohkossa esitetään blogin kuva, otsikko sekä toimintakehote lukemaan kyseinen artikkeli. Jos sattumoisin sinulle ei ole kuvaa blogia varten. Ladataan sen tilalle logosi. Tätä en kuitenkaan missään tapauksessa suosittele.",
     "backgroundColor": "creamyWhite",
-    "filter": "custom",
+    "filter": "latest",
     "blog": [
       "istumatyolainen-vasyttaako",
       "syomishairio"
@@ -74,11 +74,6 @@
         "mediaWidth": false,
         "video": "https://www.youtube.com/watch?v=sF2w8DCQ7B0",
         "body": "Lohkon kuvan saa asetettua joko vasempaan tai oikeaan puoleen.  Kuva esitetään kokoruudunkokoisena tai sen voi kehystää.",
-        "highlightList": [
-          {
-            "title": "Uudet nettisivut"
-          }
-        ],
         "buttons": [
           {
             "title": "Uudet nettisivut 2",

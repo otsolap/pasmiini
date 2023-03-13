@@ -76,11 +76,15 @@ export async function getStaticProps() {
   const site = await import(`../content/settings/site.json`);
 
   /* Getting the Blog data */
-  let files = await fs.promises.readdir(process.env.BLOG_DIR_PATH);
-  let file;
-  let data = [];
+  let files = await fs.promises.readdir(process.env.BLOG_DIR_PATH)
+  let file
+  let data = []
+  const BLOG_LIMIT = process.env.HOME_BLOG_FEED_COUNT
+  const BLOG_SOURCE = home.blogs.filter
+  console.log(BLOG_SOURCE)
 
-  for (let index = 0; index < files.length; index++) {
+  // get 3 latest blogs.
+  for (let index = 1; index <= BLOG_LIMIT; index++) {
     const item = files[index];
     file = await fs.promises.readFile(
       process.env.BLOG_DIR_PATH + item,
@@ -88,8 +92,6 @@ export async function getStaticProps() {
     );
     data.push(JSON.parse(file));
   }
-
-  let BLOG_SOURCE = home.blogs.filter;
 
   if (BLOG_SOURCE === "custom") {
     let selected = home.blogs.blog;
